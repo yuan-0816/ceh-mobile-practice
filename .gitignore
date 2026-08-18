@@ -1,0 +1,5 @@
+data/questions.imported.json
+data/questions.enriched.json
+data/translations.zh-TW.cache.json
+.local-server.*.log
+.codex-bilingual-check.png
