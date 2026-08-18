@@ -14,7 +14,8 @@ function loadState(){try{return {...defaultState(),...JSON.parse(localStorage.ge
 let state=loadState();
 function save(){localStorage.setItem(STORAGE_KEY,JSON.stringify(state));}
 function esc(s=''){return s.replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));}
-function questionText(q){return `<div class="qtext"><span class="language-label">EN</span>${esc(q.question)}</div>${q.questionZh?`<div class="qtext-zh" lang="zh-Hant"><span class="language-label zh">繁中翻譯</span>${esc(q.questionZh)}</div>`:''}`;}
+function sentences(text,locale){if(!text)return[];if(Intl?.Segmenter)return [...new Intl.Segmenter(locale,{granularity:'sentence'}).segment(text)].map(x=>x.segment.trim()).filter(Boolean);return text.match(/[^.!?。！？]+[.!?。！？]*|.+$/g)?.map(x=>x.trim()).filter(Boolean)||[text];}
+function questionText(q){const en=sentences(q.question,'en'),zh=sentences(q.questionZh,'zh-Hant'),count=Math.max(en.length,zh.length);return `<div class="question-pairs">${Array.from({length:count},(_,i)=>`<div class="sentence-pair">${en[i]?`<div class="sentence-row sentence-en"><span class="sentence-tag">EN</span><span>${esc(en[i])}</span></div>`:''}${zh[i]?`<div class="sentence-row sentence-zh" lang="zh-Hant"><span class="sentence-tag">中</span><span>${esc(zh[i])}</span></div>`:''}</div>`).join('')}</div>`;}
 function optionText(q,i){return `<span><span>${esc(q.options[i])}</span>${q.optionsZh?.[i]?`<span class="option-zh" lang="zh-Hant"><span class="language-label zh">中文</span>${esc(q.optionsZh[i])}</span>`:''}</span>`;}
 function explanationText(q){const letter=LETTERS[q.correctIndex];return (q.explanation||'').replace(/正確答案是\s*[A-D](?=[\s.．。])/gi,`正確答案是 ${letter}`).replace(/選項\s*[A-D](?=\s*(?:是)?正確)/gi,`選項 ${letter}`);}
 function qById(id){return QUESTIONS.find(q=>q.id===id)}
