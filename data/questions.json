@@ -26399,5 +26399,327 @@
     "explanation": "認證道德駭客 (CEH) 雲端運算模組強調無伺服器環境嚴重依賴細粒度許可權模型。涉及受損 API 的攻擊通常會成功，因為函式被授予過多的特權。選項 D 是正確的，因為強制執行函式級許可權和最小許可權原則直接限制了受感染函式可以執行的內容。 CEH 檔案指出，這是防止無伺服器濫用的主要防禦措施。選項 A 是有益的，但也是被動的。選項 B 著重於 SaaS 治理而不是 FaaS 執行控制。選項 C 提供可見性，但不能直接防止許可權濫用。 CEH 強調身分和存取管理 (IAM) 對於無伺服器安全性至關重要。",
     "explanationStatus": "source-provided",
     "translationStatus": "machine-translated-zh-TW"
+  },
+  {
+    "sourceQuestionId": 1,
+    "externalQuestionId": "936982",
+    "question": "In this form of encryption algorithm, every individual block contains 64-bit data, and three keys are used, where each key consists of 56 bits. Which is this encryption algorithm?",
+    "options": [
+      "IDEA",
+      "Triple Data Encryption Standard",
+      "AES",
+      "MD5 encryption algorithm"
+    ],
+    "correctIndex": 1,
+    "answerText": "Triple Data Encryption Standard",
+    "answerStatus": "unverified",
+    "answerMatchScore": 0.8077,
+    "topic": "Cryptography",
+    "source": "312-50v13 Exam - Free Actual Q&As, Page 1 _ ExamTopics.html",
+    "references": [
+      "https://www.examtopics.com/exams/eccouncil/312-50v13/view/"
+    ],
+    "communityVotes": [
+      {"answer": "B", "count": 21},
+      {"answer": "D", "count": 4},
+      {"answer": "C", "count": 1}
+    ],
+    "explanationEn": "Self-authored note: Triple DES applies DES three times to each 64-bit block and can use three independent DES keys, each with 56 effective key bits. Option B received the most community votes (21 of 26 recorded votes), but this answer has not been independently verified against an authoritative source.",
+    "id": 917,
+    "questionZh": "在這種加密演算法中，每個區塊包含 64-bit 資料，並使用三把金鑰，每把金鑰由 56 bits 組成。這是哪一種加密演算法？",
+    "optionsZh": [
+      "IDEA",
+      "三重資料加密標準（Triple DES）",
+      "AES",
+      "MD5 加密演算法"
+    ],
+    "explanation": "自編說明：Triple DES 會對每個 64-bit 區塊套用三次 DES，並可使用三把各具 56-bit 有效長度的獨立 DES 金鑰。選項 B 是社群最高票（紀錄票數 21／26），但尚未經權威來源獨立確認，因此不納入計分。",
+    "explanationStatus": "self-authored-community-vote",
+    "translationStatus": "assistant-translated-zh-TW"
+  },
+  {
+    "sourceQuestionId": 3,
+    "externalQuestionId": "936984",
+    "question": "John, a professional hacker, performs a network attack on a renowned organization and gains unauthorized access to the target network. He remains in the network without being detected for a long time and obtains sensitive information without sabotaging the organization. Which of the following attack techniques is used by John?",
+    "options": [
+      "Insider threat",
+      "Diversion theft",
+      "Spear-phishing sites",
+      "Advanced persistent threat"
+    ],
+    "correctIndex": 3,
+    "answerText": "Advanced persistent threat",
+    "answerStatus": "unverified",
+    "answerMatchScore": 1.0,
+    "topic": "System Hacking",
+    "source": "312-50v13 Exam - Free Actual Q&As, Page 1 _ ExamTopics.html",
+    "references": [
+      "https://www.examtopics.com/exams/eccouncil/312-50v13/view/"
+    ],
+    "communityVotes": [
+      {"answer": "D", "count": 6}
+    ],
+    "explanationEn": "Self-authored note: Long-term, stealthy access used to collect sensitive information matches the defining behavior of an advanced persistent threat. Option D received all 6 recorded community votes, but this answer has not been independently verified against an authoritative source.",
+    "id": 918,
+    "questionZh": "專業駭客 John 對一家知名組織發動網路攻擊，並未經授權進入目標網路。他長時間留在網路中而未被偵測，並在不破壞該組織的情況下取得敏感資訊。John 使用了下列哪一種攻擊技術？",
+    "optionsZh": [
+      "內部人員威脅",
+      "轉移竊盜",
+      "魚叉式網路釣魚網站",
+      "進階持續性威脅（APT）"
+    ],
+    "explanation": "自編說明：長期、隱密地維持未授權存取並持續蒐集敏感資訊，符合進階持續性威脅（APT）的典型特徵。選項 D 獲得全部 6 票，但尚未經權威來源獨立確認，因此不納入計分。",
+    "explanationStatus": "self-authored-community-vote",
+    "translationStatus": "assistant-translated-zh-TW"
+  },
+  {
+    "sourceQuestionId": 4,
+    "externalQuestionId": "936985",
+    "question": "You are attempting to run an Nmap port scan on a web server. Which of the following commands would result in a scan of common ports with the least amount of noise in order to evade IDS?",
+    "options": [
+      "nmap -A - Pn",
+      "nmap -sP -p-65535 -T5",
+      "nmap -sT -O -T0",
+      "nmap -A --host-timeout 99 -T1"
+    ],
+    "correctIndex": 2,
+    "answerText": "nmap -sT -O -T0",
+    "answerStatus": "unverified",
+    "answerMatchScore": 0.9333,
+    "topic": "Network Scanning",
+    "source": "312-50v13 Exam - Free Actual Q&As, Page 1 _ ExamTopics.html",
+    "references": [
+      "https://www.examtopics.com/exams/eccouncil/312-50v13/view/"
+    ],
+    "communityVotes": [
+      {"answer": "C", "count": 14},
+      {"answer": "D", "count": 1}
+    ],
+    "explanationEn": "Self-authored note: The T0 timing template sends probes extremely slowly and is intended to reduce scan timing signatures, although the other flags still affect visibility. Option C received the most community votes (14 of 15 recorded votes), but this answer has not been independently verified against authoritative Nmap documentation.",
+    "id": 919,
+    "questionZh": "你正嘗試對 Web 伺服器執行 Nmap 連接埠掃描。下列哪一個命令會以最低雜訊掃描常見連接埠，以規避 IDS？",
+    "optionsZh": [
+      "nmap -A - Pn",
+      "nmap -sP -p-65535 -T5",
+      "nmap -sT -O -T0",
+      "nmap -A --host-timeout 99 -T1"
+    ],
+    "explanation": "自編說明：T0 時序範本會以極慢速度傳送探測封包，目的是降低掃描的時序特徵，但其他參數仍會影響可見度。選項 C 是社群最高票（紀錄票數 14／15），尚未依 Nmap 權威文件獨立確認，因此不納入計分。",
+    "explanationStatus": "self-authored-community-vote",
+    "translationStatus": "assistant-translated-zh-TW"
+  },
+  {
+    "sourceQuestionId": 5,
+    "externalQuestionId": "936986",
+    "question": "This wireless security protocol allows 192-bit minimum-strength security protocols and cryptographic tools to protect sensitive data, such as GCMP-256, HMAC-SHA384, and ECDSA using a 384-bit elliptic curve. Which is this wireless security protocol?",
+    "options": [
+      "WPA3-Personal",
+      "WPA3-Enterprise",
+      "WPA2-Enterprise",
+      "WPA2-Personal"
+    ],
+    "correctIndex": 1,
+    "answerText": "WPA3-Enterprise",
+    "answerStatus": "unverified",
+    "answerMatchScore": 1.0,
+    "topic": "Wireless Network Hacking",
+    "source": "312-50v13 Exam - Free Actual Q&As, Page 1 _ ExamTopics.html",
+    "references": [
+      "https://www.examtopics.com/exams/eccouncil/312-50v13/view/"
+    ],
+    "communityVotes": [
+      {"answer": "B", "count": 5}
+    ],
+    "explanationEn": "Self-authored note: WPA3-Enterprise includes an optional 192-bit security mode using stronger cryptographic suites for sensitive environments. Option B received all 5 recorded community votes, but this answer has not been independently verified against an authoritative source.",
+    "id": 920,
+    "questionZh": "這種無線安全協定允許使用最低 192-bit 強度的安全協定與密碼工具保護敏感資料，例如 GCMP-256、HMAC-SHA384，以及使用 384-bit 橢圓曲線的 ECDSA。這是哪一種無線安全協定？",
+    "optionsZh": [
+      "WPA3-Personal",
+      "WPA3-Enterprise",
+      "WPA2-Enterprise",
+      "WPA2-Personal"
+    ],
+    "explanation": "自編說明：WPA3-Enterprise 提供選用的 192-bit 安全模式，為敏感環境使用更強的密碼套件。選項 B 獲得全部 5 票，但尚未經權威來源獨立確認，因此不納入計分。",
+    "explanationStatus": "self-authored-community-vote",
+    "translationStatus": "assistant-translated-zh-TW"
+  },
+  {
+    "sourceQuestionId": 6,
+    "externalQuestionId": "936987",
+    "question": "What are common files on a web server that can be misconfigured and provide useful information for a hacker such as verbose error messages?",
+    "options": [
+      "httpd.conf",
+      "administration.config",
+      "php.ini",
+      "idq.dll"
+    ],
+    "correctIndex": 2,
+    "answerText": "php.ini",
+    "answerStatus": "unverified",
+    "answerMatchScore": 0.75,
+    "topic": "Web Application Hacking",
+    "source": "312-50v13 Exam - Free Actual Q&As, Page 1 _ ExamTopics.html",
+    "references": [
+      "https://www.examtopics.com/exams/eccouncil/312-50v13/view/"
+    ],
+    "communityVotes": [
+      {"answer": "C", "count": 9},
+      {"answer": "A", "count": 3}
+    ],
+    "explanationEn": "Self-authored note: PHP error display and verbosity settings are commonly controlled in php.ini, and an unsafe configuration can disclose paths, stack details, or other implementation information. Option C received the most community votes (9 of 12 recorded votes), but this answer has not been independently verified against an authoritative source.",
+    "id": 921,
+    "questionZh": "Web 伺服器上有哪些常見檔案可能因設定錯誤而提供對駭客有用的資訊，例如過度詳細的錯誤訊息？",
+    "optionsZh": [
+      "httpd.conf",
+      "administration.config",
+      "php.ini",
+      "idq.dll"
+    ],
+    "explanation": "自編說明：PHP 的錯誤顯示與詳細程度通常由 php.ini 控制；不安全的設定可能洩漏檔案路徑、堆疊細節或其他實作資訊。選項 C 是社群最高票（紀錄票數 9／12），但尚未經權威來源獨立確認，因此不納入計分。",
+    "explanationStatus": "self-authored-community-vote",
+    "translationStatus": "assistant-translated-zh-TW"
+  },
+  {
+    "sourceQuestionId": 7,
+    "externalQuestionId": "936988",
+    "question": "Gerard, a disgruntled ex-employee of Sunglass IT Solutions, targets this organization to perform sophisticated attacks and bring down its reputation in the market. To launch the attacks process, he performed DNS footprinting to gather information about DNS servers and to identify the hosts connected in the target network. He used an automated tool that can retrieve information about DNS zone data including DNS domain names, computer names, IP addresses, DNS records, and network Whois records. He further exploited this information to launch other sophisticated attacks. What is the tool employed by Gerard in the above scenario?",
+    "options": [
+      "Towelroot",
+      "Knative",
+      "zANTI",
+      "Bluto"
+    ],
+    "correctIndex": 3,
+    "answerText": "Bluto",
+    "answerStatus": "unverified",
+    "answerMatchScore": 0.7778,
+    "topic": "Footprinting and Reconnaissance",
+    "source": "312-50v13 Exam - Free Actual Q&As, Page 1 _ ExamTopics.html",
+    "references": [
+      "https://www.examtopics.com/exams/eccouncil/312-50v13/view/"
+    ],
+    "communityVotes": [
+      {"answer": "D", "count": 7},
+      {"answer": "C", "count": 2}
+    ],
+    "explanationEn": "Self-authored note: Bluto is an automated reconnaissance tool that combines DNS enumeration and related OSINT sources to collect domains, hosts, addresses, records, and Whois information. Option D received the most community votes (7 of 9 recorded votes), but this answer has not been independently verified against an authoritative source.",
+    "id": 922,
+    "questionZh": "Sunglass IT Solutions 的不滿前員工 Gerard 鎖定該組織，企圖發動複雜攻擊並損害其市場聲譽。為了展開攻擊，他執行 DNS 足跡蒐集，以取得 DNS 伺服器資訊並識別連接至目標網路的主機。他使用一套自動化工具，可取得 DNS 區域資料，包括 DNS 網域名稱、電腦名稱、IP 位址、DNS 紀錄及網路 Whois 紀錄。之後他進一步利用這些資訊發動其他複雜攻擊。在上述情境中，Gerard 使用的是哪一套工具？",
+    "optionsZh": [
+      "Towelroot",
+      "Knative",
+      "zANTI",
+      "Bluto"
+    ],
+    "explanation": "自編說明：Bluto 是一套自動化偵察工具，可結合 DNS 列舉及相關 OSINT 來源，蒐集網域、主機、位址、DNS 紀錄與 Whois 資訊。選項 D 是社群最高票（紀錄票數 7／9），但尚未經權威來源獨立確認，因此不納入計分。",
+    "explanationStatus": "self-authored-community-vote",
+    "translationStatus": "assistant-translated-zh-TW"
+  },
+  {
+    "sourceQuestionId": 8,
+    "externalQuestionId": "936989",
+    "question": "Tony is a penetration tester tasked with performing a penetration test. After gaining initial access to a target system, he finds a list of hashed passwords. Which of the following tools would not be useful for cracking the hashed passwords?",
+    "options": [
+      "Hashcat",
+      "John the Ripper",
+      "THC-Hydra",
+      "netcat"
+    ],
+    "correctIndex": 3,
+    "answerText": "netcat",
+    "answerStatus": "unverified",
+    "answerMatchScore": 0.8947,
+    "topic": "Password Attacks",
+    "source": "312-50v13 Exam - Free Actual Q&As, Page 1 _ ExamTopics.html",
+    "references": [
+      "https://www.examtopics.com/exams/eccouncil/312-50v13/view/"
+    ],
+    "communityVotes": [
+      {"answer": "D", "count": 17},
+      {"answer": "B", "count": 2}
+    ],
+    "explanationEn": "Self-authored note: netcat is a general-purpose network connection and data-transfer utility, not an offline password-hash cracking tool. Option D received the most community votes (17 of 19 recorded votes), but this answer has not been independently verified against an authoritative source.",
+    "id": 923,
+    "questionZh": "滲透測試人員 Tony 在取得目標系統的初始存取權後，發現一份雜湊密碼清單。下列哪一套工具對破解這些雜湊密碼沒有幫助？",
+    "optionsZh": [
+      "Hashcat",
+      "John the Ripper",
+      "THC-Hydra",
+      "netcat"
+    ],
+    "explanation": "自編說明：netcat 是通用的網路連線與資料傳輸工具，並不是離線密碼雜湊破解工具。選項 D 是社群最高票（紀錄票數 17／19），但尚未經權威來源獨立確認，因此不納入計分。",
+    "explanationStatus": "self-authored-community-vote",
+    "translationStatus": "assistant-translated-zh-TW"
+  },
+  {
+    "sourceQuestionId": 9,
+    "externalQuestionId": "936990",
+    "question": "Which of the following Google advanced search operators helps an attacker in gathering information about websites that are similar to a specified target URL?",
+    "options": [
+      "[inurl:]",
+      "[info:]",
+      "[site:]",
+      "[related:]"
+    ],
+    "correctIndex": 3,
+    "answerText": "[related:]",
+    "answerStatus": "unverified",
+    "answerMatchScore": 1.0,
+    "topic": "Footprinting and Reconnaissance",
+    "source": "312-50v13 Exam - Free Actual Q&As, Page 1 _ ExamTopics.html",
+    "references": [
+      "https://www.examtopics.com/exams/eccouncil/312-50v13/view/"
+    ],
+    "communityVotes": [
+      {"answer": "D", "count": 2}
+    ],
+    "explanationEn": "Self-authored note: The related: operator is intended to find pages or sites similar to a specified URL. Option D received all 2 recorded community votes, but this answer has not been independently verified against an authoritative source.",
+    "id": 924,
+    "questionZh": "下列哪一個 Google 進階搜尋運算子可協助攻擊者蒐集與指定目標 URL 相似的網站資訊？",
+    "optionsZh": [
+      "[inurl:]",
+      "[info:]",
+      "[site:]",
+      "[related:]"
+    ],
+    "explanation": "自編說明：related: 運算子用於尋找與指定 URL 相似的網頁或網站。選項 D 獲得全部 2 票，但尚未經權威來源獨立確認，因此不納入計分。",
+    "explanationStatus": "self-authored-community-vote",
+    "translationStatus": "assistant-translated-zh-TW"
+  },
+  {
+    "sourceQuestionId": 10,
+    "externalQuestionId": "936991",
+    "question": "You are a penetration tester working to test the user awareness of the employees of the client XYZ. You harvested two employees’ emails from some public sources and are creating a client-side backdoor to send it to the employees via email. Which stage of the cyber kill chain are you at?",
+    "options": [
+      "Reconnaissance",
+      "Weaponization",
+      "Command and control",
+      "Exploitation"
+    ],
+    "correctIndex": 1,
+    "answerText": "Weaponization",
+    "answerStatus": "unverified",
+    "answerMatchScore": 0.9286,
+    "topic": "Cyber Kill Chain",
+    "source": "312-50v13 Exam - Free Actual Q&As, Page 1 _ ExamTopics.html",
+    "references": [
+      "https://www.examtopics.com/exams/eccouncil/312-50v13/view/"
+    ],
+    "communityVotes": [
+      {"answer": "B", "count": 13},
+      {"answer": "D", "count": 1}
+    ],
+    "explanationEn": "Self-authored note: Creating or packaging a client-side backdoor for later delivery corresponds to the weaponization stage of the cyber kill chain. Option B received the most community votes (13 of 14 recorded votes), but this answer has not been independently verified against an authoritative source.",
+    "id": 925,
+    "questionZh": "你是一名滲透測試人員，負責測試客戶 XYZ 員工的資安意識。你從公開來源取得兩名員工的電子郵件地址，並正在建立用戶端後門，準備透過電子郵件傳送給員工。你目前處於網路擊殺鏈（Cyber Kill Chain）的哪一個階段？",
+    "optionsZh": [
+      "偵察（Reconnaissance）",
+      "武器化（Weaponization）",
+      "命令與控制（Command and Control）",
+      "利用（Exploitation）"
+    ],
+    "explanation": "自編說明：建立或封裝用戶端後門以供後續傳送，對應網路擊殺鏈的武器化（Weaponization）階段。選項 B 是社群最高票（紀錄票數 13／14），但尚未經權威來源獨立確認，因此不納入計分。",
+    "explanationStatus": "self-authored-community-vote",
+    "translationStatus": "assistant-translated-zh-TW"
   }
 ]
