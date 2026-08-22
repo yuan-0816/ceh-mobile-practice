@@ -3,7 +3,7 @@
   --primary:#111827;--accent:#2563eb;--good:#15803d;--bad:#b91c1c;--warn:#b45309;
   --radius:18px;--shadow:0 8px 26px rgba(15,23,42,.07);
 }
-html{color-scheme:light}html[data-theme="dark"]{color-scheme:dark}:root[data-theme="dark"]{--bg:#0b1120;--card:#111827;--text:#e5e7eb;--muted:#94a3b8;--line:#334155;--primary:#1e293b;--accent:#3b82f6;--good:#4ade80;--bad:#f87171;--warn:#fbbf24;--shadow:0 10px 30px rgba(0,0,0,.28)}
+html{color-scheme:light}html[data-theme="dark"]{color-scheme:dark}:root[data-theme="dark"]{--bg:#121212;--card:#1c1c1c;--text:#ededed;--muted:#a3a3a3;--line:#3a3a3a;--primary:#2a2a2a;--accent:#3b82f6;--good:#4ade80;--bad:#f87171;--warn:#fbbf24;--shadow:0 10px 30px rgba(0,0,0,.32)}
 *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC",sans-serif}
 button,input,select{font:inherit}.shell{max-width:720px;margin:0 auto;min-height:100dvh;padding:18px 16px 92px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}.topbar-actions{display:flex;align-items:center;gap:8px}.theme-toggle{min-height:38px;padding:8px 11px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--text);font-size:12px;font-weight:800;white-space:nowrap;cursor:pointer}.theme-toggle:hover{border-color:#60a5fa}.brand{font-size:21px;font-weight:800;letter-spacing:.2px}.sub{font-size:13px;color:var(--muted)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px;margin-bottom:14px}.hero{background:var(--primary);color:#fff;border:none}.hero .muted{color:#cbd5e1}.hero h1{font-size:30px;margin:4px 0 8px}.muted{color:var(--muted)}
@@ -50,30 +50,30 @@ button,input,select{font:inherit}.shell{max-width:720px;margin:0 auto;min-height
   .actions,.exam-nav{max-width:560px;margin-left:auto}
   .site-disclaimer{max-width:1040px;margin-bottom:28px;padding:0 34px}
 }
-html[data-theme="dark"] .bottom-nav{background:rgba(15,23,42,.96)}
-html[data-theme="dark"] .hero{background:#172033}
+html[data-theme="dark"] .bottom-nav{background:rgba(28,28,28,.96)}
+html[data-theme="dark"] .hero{background:#242424}
 html[data-theme="dark"] .hero .muted{color:#cbd5e1}
-html[data-theme="dark"] .progress{background:#334155}
-html[data-theme="dark"] .hero .progress{background:#475569}
-html[data-theme="dark"] .btn-outline,html[data-theme="dark"] .chip{background:#111827;color:#e5e7eb}
-html[data-theme="dark"] .btn-light{background:#1e3a5f;color:#bfdbfe}
+html[data-theme="dark"] .progress{background:#3a3a3a}
+html[data-theme="dark"] .hero .progress{background:#525252}
+html[data-theme="dark"] .btn-outline,html[data-theme="dark"] .chip{background:#1c1c1c;color:#ededed}
+html[data-theme="dark"] .btn-light{background:#303030;color:#e5e7eb}
 html[data-theme="dark"] .btn-danger{background:#451a1a;color:#fecaca}
-html[data-theme="dark"] .pill{background:#312e81;color:#e0e7ff}
-html[data-theme="dark"] .btn-translate{border-color:#1d4ed8;background:#172554;color:#bfdbfe}
-html[data-theme="dark"] .btn-translate[aria-expanded="true"]{border-color:#60a5fa;background:#1e3a8a;color:#dbeafe}
-html[data-theme="dark"] .question-pairs{border-color:#334155}
-html[data-theme="dark"] .sentence-pair,html[data-theme="dark"] .option{background:#111827}
-html[data-theme="dark"] .sentence-pair+.sentence-pair{border-color:#334155}
+html[data-theme="dark"] .pill{background:#303030;color:#e5e7eb}
+html[data-theme="dark"] .btn-translate{border-color:#525252;background:#292929;color:#d4d4d4}
+html[data-theme="dark"] .btn-translate[aria-expanded="true"]{border-color:#737373;background:#383838;color:#f5f5f5}
+html[data-theme="dark"] .question-pairs{border-color:#3a3a3a}
+html[data-theme="dark"] .sentence-pair,html[data-theme="dark"] .option{background:#1c1c1c}
+html[data-theme="dark"] .sentence-pair+.sentence-pair{border-color:#3a3a3a}
 html[data-theme="dark"] .sentence-en{color:#f1f5f9}
-html[data-theme="dark"] .sentence-zh{border-color:#1e40af;color:#bfdbfe}
-html[data-theme="dark"] .sentence-tag,html[data-theme="dark"] .language-label{background:#334155;color:#cbd5e1}
-html[data-theme="dark"] .sentence-zh .sentence-tag,html[data-theme="dark"] .language-label.zh{background:#1e3a8a;color:#bfdbfe}
-html[data-theme="dark"] .option-zh{border-color:#1e40af;color:#bfdbfe}
-html[data-theme="dark"] .option .letter,html[data-theme="dark"] .num{background:#1e293b;color:#e2e8f0}
-html[data-theme="dark"] .option.selected{border-color:#60a5fa;background:#172554}
+html[data-theme="dark"] .sentence-zh{border-color:#525252;color:#d4d4d4}
+html[data-theme="dark"] .sentence-tag,html[data-theme="dark"] .language-label{background:#3a3a3a;color:#d4d4d4}
+html[data-theme="dark"] .sentence-zh .sentence-tag,html[data-theme="dark"] .language-label.zh{background:#404040;color:#e5e7eb}
+html[data-theme="dark"] .option-zh{border-color:#525252;color:#d4d4d4}
+html[data-theme="dark"] .option .letter,html[data-theme="dark"] .num{background:#2a2a2a;color:#e5e7eb}
+html[data-theme="dark"] .option.selected{border-color:#737373;background:#292929}
 html[data-theme="dark"] .option.correct,html[data-theme="dark"] .result.good{border-color:#166534;background:#052e16}
 html[data-theme="dark"] .option.wrong,html[data-theme="dark"] .result.bad{border-color:#991b1b;background:#450a0a}
 html[data-theme="dark"] .option.candidate,html[data-theme="dark"] .result.candidate{border-color:#b45309;background:#422006}
 html[data-theme="dark"] .badge-good{color:#86efac}html[data-theme="dark"] .badge-warn{color:#fcd34d}html[data-theme="dark"] .badge-bad{color:#fca5a5}
-html[data-theme="dark"] .chip.active{background:#2563eb;border-color:#2563eb;color:#fff}
-@media (min-width:960px){html[data-theme="dark"] .nav-btn:hover{background:#1e293b;color:#93c5fd}html[data-theme="dark"] .nav-btn.active{background:#172554;color:#93c5fd}}
+html[data-theme="dark"] .chip.active{background:#525252;border-color:#737373;color:#fff}
+@media (min-width:960px){html[data-theme="dark"] .nav-btn:hover{background:#2a2a2a;color:#f5f5f5}html[data-theme="dark"] .nav-btn.active{background:#383838;color:#fff}}
