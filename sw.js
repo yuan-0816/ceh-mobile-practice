@@ -1,8 +1,8 @@
-const CACHE='ceh-v25';
+const CACHE='ceh-v26';
 const ASSETS=[
   './',
   './index.html',
-  './styles.css?v=21',
+  './styles.css?v=22',
   './app.js?v=16',
   './manifest.webmanifest',
   './data/source-questions/ceh13-01.json',
