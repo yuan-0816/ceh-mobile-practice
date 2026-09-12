@@ -208,6 +208,15 @@ def apply_source_answers(questions: list[dict], answers: dict[int, str], source:
         if not answer:
             continue
         needle = comparable(answer)
+        exact_matches = [
+            index
+            for index, option in enumerate(question["options"])
+            if comparable(option) == needle
+        ]
+        if exact_matches:
+            question["correctIndex"] = exact_matches[0]
+            question["answerMatchScore"] = 1.0
+            continue
         scores = []
         for option in question["options"]:
             option_value = comparable(option)

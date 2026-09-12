@@ -7453,7 +7453,7 @@
       "Use SQL injection to extract internal file paths from the database."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Use Google advanced search operators to enumerate S3 bucket URLs.",
     "id": 250,
     "topic": "Cloud Computing",
@@ -7483,7 +7483,7 @@
       "Use a man-in-the-middle (MitM) attack to intercept and decrypt traffic."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Use a man-in-the-middle (MitM) attack to intercept and decrypt traffic.",
     "id": 251,
     "topic": "Web Application Hacking",
@@ -7513,7 +7513,7 @@
       "Exploit name resolution to capture password hashes."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Exploit name resolution to capture password hashes.",
     "id": 252,
     "topic": "Wireless Network Hacking",
@@ -7543,7 +7543,7 @@
       "Fragmentation attack"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Insertion attack",
     "id": 253,
     "topic": "Web Application Hacking",
@@ -7573,7 +7573,7 @@
       "Injecting malicious SQL queries."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Gathering information through exposed indexing instructions.",
     "id": 254,
     "topic": "Cloud Computing",
@@ -7603,7 +7603,7 @@
       "Execute XSS to steal cookies."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Access the local storage to retrieve data directly from the device.",
     "id": 255,
     "topic": "Web Application Hacking",
@@ -7633,8 +7633,8 @@
       "Perform a CSRF attack."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
-    "answerText": "Session token replay.",
+    "answerStatus": "source-verified",
+    "answerText": "Exploit a browser zero-day vulnerability to inject scripts.",
     "id": 256,
     "topic": "Web Application Hacking",
     "explanationEn": "A still-valid session token can be replayed to inherit the authenticated session, bypassing the need to repeat HTTPS authentication or MFA.",
@@ -7646,7 +7646,7 @@
       "執行 CSRF 攻擊。"
     ],
     "explanation": "可以重播仍然有效的會話令牌來繼承經過驗證的會話，從而無需重複 HTTPS 身份驗證或 MFA。",
-    "correctIndex": 1,
+    "correctIndex": 2,
     "explanationStatus": "researched-study-note",
     "references": [
       "https://owasp.org/www-community/attacks/",
@@ -7665,7 +7665,7 @@
       "Cache poisoned denial of service (CPDoS)"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Side-channel attack",
     "id": 257,
     "topic": "Cloud Computing",
@@ -7695,7 +7695,7 @@
       "nmap -sU -p 161 --script snmp-processes"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "nmap -sU -p 161 --script snmp-processes",
     "id": 258,
     "topic": "Network and Perimeter Hacking",
@@ -7725,7 +7725,7 @@
       "CSRF attack."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Perform a replay attack by using the same token after logout.",
     "id": 259,
     "topic": "Web Application Hacking",
@@ -7757,8 +7757,8 @@
       "Execute a TCP ACK scan to map rules."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
-    "answerText": "Execute a TCP ACK scan to map rules.",
+    "answerStatus": "source-verified",
+    "answerText": "Use a low-and-slow scan.",
     "id": 260,
     "topic": "Network and Perimeter Hacking",
     "explanationEn": "An ACK scan is used to map firewall rules and distinguish filtered from unfiltered paths; it does not determine whether a port is open.",
@@ -7770,7 +7770,7 @@
       "執行 TCP ACK 掃描以對應規則。"
     ],
     "explanation": "ACK 掃描用於對應防火牆規則並區分過濾路徑和未過濾路徑；它無法確定連線埠是否已開啟。",
-    "correctIndex": 3,
+    "correctIndex": 0,
     "explanationStatus": "researched-study-note",
     "references": [
       "https://nmap.org/book/man.html"
@@ -7787,7 +7787,7 @@
       "Execute a CSRF attack."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Gain unauthorized access to the ICS and control operations.",
     "id": 261,
     "topic": "General CEH",
@@ -7817,7 +7817,7 @@
       "Inject JavaScript for XSS testing."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Enter ' OR '1'='1 in the username/password fields.",
     "id": 262,
     "topic": "Web Application Hacking",
@@ -7849,7 +7849,7 @@
       "Phishing email with a fake HR policy."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Create a convincing fake onboarding portal.",
     "id": 263,
     "topic": "Social Engineering",
@@ -7879,7 +7879,7 @@
       "IGMP"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "TCP",
     "id": 264,
     "topic": "Network and Perimeter Hacking",
@@ -7909,7 +7909,7 @@
       "Vulnerability Scanning"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Google Hacking (Dorking)",
     "id": 265,
     "topic": "Social Engineering",
@@ -7939,7 +7939,7 @@
       "-p"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "-O",
     "id": 266,
     "topic": "Network and Perimeter Hacking",
@@ -7969,7 +7969,7 @@
       "Black Box is done by internal employees."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "White Box has full knowledge; Black Box has none.",
     "id": 267,
     "topic": "General CEH",
@@ -7999,7 +7999,7 @@
       "Metasploit"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Burp Suite",
     "id": 268,
     "topic": "Network and Perimeter Hacking",
@@ -8031,7 +8031,7 @@
       "Personal emails"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Publicly accessible internet-connected devices",
     "id": 269,
     "topic": "Wireless Network Hacking",
@@ -8061,7 +8061,7 @@
       "53 and 67"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "80 and 443",
     "id": 270,
     "topic": "Network and Perimeter Hacking",
@@ -8091,7 +8091,7 @@
       "Port Scanning"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Active OS Fingerprinting",
     "id": 271,
     "topic": "Network and Perimeter Hacking",
@@ -8121,8 +8121,8 @@
       "IDLE Scan (-sI)"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
-    "answerText": "IDLE Scan (-sI)",
+    "answerStatus": "source-verified",
+    "answerText": "Stealth SYN Scan (-sS)",
     "id": 272,
     "topic": "Network and Perimeter Hacking",
     "explanationEn": "Nmap idle scan is the most stealthy listed choice because probes reaching the target appear to originate from a zombie host, not the scanner.",
@@ -8134,7 +8134,7 @@
       "空閒掃描 (-sI)"
     ],
     "explanation": "Nmap 空閒掃描是列出的最隱密的選擇，因為到達目標的探針似乎來自殭屍主機，而不是掃描器。",
-    "correctIndex": 3,
+    "correctIndex": 1,
     "explanationStatus": "researched-study-note",
     "references": [
       "https://nmap.org/book/idlescan.html"
@@ -8151,7 +8151,7 @@
       "Privilege Escalation"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Cross-Site Scripting (XSS)",
     "id": 273,
     "topic": "Web Application Hacking",
@@ -8183,7 +8183,7 @@
       "To encrypt all internal emails."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "To continuously identify, prioritize, and remediate security weaknesses.",
     "id": 274,
     "topic": "General CEH",
@@ -8214,7 +8214,7 @@
       "Nessus"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Tcpdump",
     "id": 275,
     "topic": "Network and Perimeter Hacking",
@@ -8244,7 +8244,7 @@
       "Social Engineering"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Banner Grabbing",
     "id": 276,
     "topic": "Web Application Hacking",
@@ -8274,7 +8274,7 @@
       "SNMP"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "ICMP",
     "id": 277,
     "topic": "Network and Perimeter Hacking",
@@ -8304,7 +8304,7 @@
       "GDPR"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "CVSS (Common Vulnerability Scoring System)",
     "id": 278,
     "topic": "General CEH",
@@ -8334,7 +8334,7 @@
       "The server is offline."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "There is likely a firewall or packet filter that identifies which ports are open/closed.",
     "id": 279,
     "topic": "Web Application Hacking",
@@ -8364,7 +8364,7 @@
       "nmap -sA"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "nmap -sS",
     "id": 280,
     "topic": "Network and Perimeter Hacking",
@@ -8394,7 +8394,7 @@
       "IDLE Scan"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Xmas Scan",
     "id": 281,
     "topic": "Network and Perimeter Hacking",
@@ -8424,7 +8424,7 @@
       "DNS"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "SMB",
     "id": 282,
     "topic": "Web Application Hacking",
@@ -8454,7 +8454,7 @@
       "secret"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "public",
     "id": 283,
     "topic": "Network and Perimeter Hacking",
@@ -8484,7 +8484,7 @@
       "To capture packets on the local network."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "To identify active (alive) hosts within a subnet.",
     "id": 284,
     "topic": "Network and Perimeter Hacking",
@@ -8514,7 +8514,7 @@
       "Wireshark"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "FOCA",
     "id": 285,
     "topic": "General CEH",
@@ -8544,7 +8544,7 @@
       "Weak passwords used by the cloud administrator."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Physical information leaked by the hardware (e.g., power consumption, timing).",
     "id": 286,
     "topic": "Cloud Computing",
@@ -8574,7 +8574,7 @@
       "Rainbow Table Attack"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Brute-Force Attack",
     "id": 287,
     "topic": "General CEH",
@@ -8604,7 +8604,7 @@
       "Precomputed Hash Attack"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Pass-the-Hash (PtH)",
     "id": 288,
     "topic": "Cryptography",
@@ -8634,7 +8634,7 @@
       "To block all incoming SQL injection attempts."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "To distract and monitor attackers by providing a decoy system.",
     "id": 289,
     "topic": "Web Application Hacking",
@@ -8664,7 +8664,7 @@
       "Netcat"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Nessus",
     "id": 290,
     "topic": "Network and Perimeter Hacking",
@@ -8694,7 +8694,7 @@
       "CNAME record"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "MX record",
     "id": 291,
     "topic": "Network and Perimeter Hacking",
@@ -8724,7 +8724,7 @@
       "MAC Spoofing"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Evil Twin",
     "id": 292,
     "topic": "Wireless Network Hacking",
@@ -8754,7 +8754,7 @@
       "Snort"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Ettercap",
     "id": 293,
     "topic": "Network and Perimeter Hacking",
@@ -8784,7 +8784,7 @@
       "Detection"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Denial",
     "id": 294,
     "topic": "General CEH",
@@ -8814,7 +8814,7 @@
       "Rootkit Installation"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Social Engineering",
     "id": 295,
     "topic": "Web Application Hacking",
@@ -8844,7 +8844,7 @@
       "Command Injection"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Sensitive Data Exposure",
     "id": 296,
     "topic": "Web Application Hacking",
@@ -8876,7 +8876,7 @@
       "safe"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "vuln",
     "id": 297,
     "topic": "Network and Perimeter Hacking",
@@ -8906,7 +8906,7 @@
       "To limit the length of the password."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "To prevent the use of precomputed Rainbow Tables.",
     "id": 298,
     "topic": "Cryptography",
@@ -8936,7 +8936,7 @@
       "Worm"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Keylogger",
     "id": 299,
     "topic": "Malware Threats",
@@ -8966,7 +8966,7 @@
       "Installation"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Weaponization",
     "id": 300,
     "topic": "Reconnaissance Techniques",
@@ -8996,7 +8996,7 @@
       "netstat -an"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "route print",
     "id": 301,
     "topic": "General CEH",
@@ -9026,7 +9026,7 @@
       "Smishing"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Spear Phishing",
     "id": 302,
     "topic": "Social Engineering",
@@ -9056,7 +9056,7 @@
       "RDP"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "SSH",
     "id": 303,
     "topic": "General CEH",
@@ -9086,7 +9086,7 @@
       "To delete log files."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "To collect as much information as possible about a target network.",
     "id": 304,
     "topic": "Network and Perimeter Hacking",
@@ -9116,7 +9116,7 @@
       "Blowfish"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "RSA",
     "id": 305,
     "topic": "Cryptography",
@@ -9146,7 +9146,7 @@
       "To perform a DDoS attack."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "To maintain hidden access to a system at the OS level.",
     "id": 306,
     "topic": "Malware Threats",
@@ -9176,7 +9176,7 @@
       "DELETE"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "PUT",
     "id": 307,
     "topic": "Web Application Hacking",
@@ -9206,7 +9206,7 @@
       "Cracking the server's SSH password."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Executing malicious scripts in the victim's browser.",
     "id": 308,
     "topic": "Web Application Hacking",
@@ -9238,7 +9238,7 @@
       "Hashcat"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "NetStumbler",
     "id": 309,
     "topic": "Wireless Network Hacking",
@@ -9268,7 +9268,7 @@
       "Fragmentation Attack"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "KRACK (Key Reinstallation Attack)",
     "id": 310,
     "topic": "Wireless Network Hacking",
@@ -9298,7 +9298,7 @@
       "Sequencer"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Dashboard / Scanner",
     "id": 311,
     "topic": "Web Application Hacking",
@@ -9330,7 +9330,7 @@
       "Error-based SQLi"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Blind SQLi",
     "id": 312,
     "topic": "Web Application Hacking",
@@ -9362,7 +9362,7 @@
       "Memory Leak"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Buffer Overflow",
     "id": 313,
     "topic": "General CEH",
@@ -9392,7 +9392,7 @@
       "Encapsulation"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Steganography",
     "id": 314,
     "topic": "Cryptography",
@@ -9422,7 +9422,7 @@
       "The Internet Service Provider (ISP)"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "The Cloud Service Provider (CSP)",
     "id": 315,
     "topic": "Cloud Computing",
@@ -9452,7 +9452,7 @@
       "FTP"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "MQTT",
     "id": 316,
     "topic": "Web Application Hacking",
@@ -9482,7 +9482,7 @@
       "Model Stealing"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Adversarial Attack",
     "id": 317,
     "topic": "Cryptography",
@@ -9512,7 +9512,7 @@
       "Serverless"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Containers",
     "id": 318,
     "topic": "Cloud Computing",
@@ -9542,7 +9542,7 @@
       "Rootkit"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Ransomware",
     "id": 319,
     "topic": "Malware Threats",
@@ -9572,7 +9572,7 @@
       "Speed and Efficiency"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Integrity, Non-repudiation, and Authentication",
     "id": 320,
     "topic": "Cryptography",
@@ -9603,7 +9603,7 @@
       "There is no difference."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "IDS alerts on threats; IPS actively blocks threats.",
     "id": 321,
     "topic": "General CEH",
@@ -9634,7 +9634,7 @@
       "Proxy Firewall"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Stateful Inspection Firewall",
     "id": 322,
     "topic": "Network and Perimeter Hacking",
@@ -9664,7 +9664,7 @@
       "Encoding"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Hashing",
     "id": 323,
     "topic": "Cryptography",
@@ -9694,7 +9694,7 @@
       "IEEE"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "OWASP",
     "id": 324,
     "topic": "Web Application Hacking",
@@ -9726,7 +9726,7 @@
       "NOP"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Exploit",
     "id": 325,
     "topic": "General CEH",
@@ -9756,7 +9756,7 @@
       "eth.src == 00:11:22"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "ip.addr == 10.0.0.5",
     "id": 326,
     "topic": "Web Application Hacking",
@@ -9786,7 +9786,7 @@
       "ICMP Redirect"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "ARP Poisoning (Spoofing)",
     "id": 327,
     "topic": "Network and Perimeter Hacking",
@@ -9816,7 +9816,7 @@
       "To block malicious websites automatically."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "To provide authentication and integrity to DNS data.",
     "id": 328,
     "topic": "Network and Perimeter Hacking",
@@ -9846,7 +9846,7 @@
       "SMS Code"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Fingerprint",
     "id": 329,
     "topic": "General CEH",
@@ -9876,7 +9876,7 @@
       "Blueborne"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Bluesnarfing",
     "id": 330,
     "topic": "Wireless Network Hacking",
@@ -9906,7 +9906,7 @@
       "To track the physical location of all employees 24/7."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "To enforce security policies and remotely wipe corporate mobile devices.",
     "id": 331,
     "topic": "Wireless Network Hacking",
@@ -9936,7 +9936,7 @@
       "XML-RPC"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "REST",
     "id": 332,
     "topic": "Web Application Hacking",
@@ -9968,7 +9968,7 @@
       "SQL Injection"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "CSRF (Cross-Site Request Forgery)",
     "id": 333,
     "topic": "Web Application Hacking",
@@ -10000,7 +10000,7 @@
       "Cross-Site Scripting"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "IDOR (Insecure Direct Object Reference)",
     "id": 334,
     "topic": "General CEH",
@@ -10032,7 +10032,7 @@
       "Incident Response Commander"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Tier 1 Analyst",
     "id": 335,
     "topic": "General CEH",
@@ -10062,7 +10062,7 @@
       "Recovery"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Preparation",
     "id": 336,
     "topic": "General CEH",
@@ -10092,7 +10092,7 @@
       "AUP"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "BCP (Business Continuity Plan)",
     "id": 337,
     "topic": "General CEH",
@@ -10123,7 +10123,7 @@
       "Changes the owner of the file to \"777\"."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Grants full read, write, and execute permissions to everyone.",
     "id": 338,
     "topic": "General CEH",
@@ -10153,7 +10153,7 @@
       "HKEY_USERS (HKU)"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "HKEY_CURRENT_USER (HKCU)",
     "id": 339,
     "topic": "General CEH",
@@ -10183,7 +10183,7 @@
       "Maintaining Persistence"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Vertical Privilege Escalation",
     "id": 340,
     "topic": "General CEH",
@@ -10213,7 +10213,7 @@
       "netsh"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "wevtutil or Event Viewer",
     "id": 341,
     "topic": "Network and Perimeter Hacking",
@@ -10243,7 +10243,7 @@
       "Code Auditing"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Dynamic Analysis (Sandboxing)",
     "id": 342,
     "topic": "Malware Threats",
@@ -10273,7 +10273,7 @@
       "Botnet"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "RAT (Remote Access Trojan)",
     "id": 343,
     "topic": "Malware Threats",
@@ -10303,7 +10303,7 @@
       "It floods the IDS with fake alerts."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "It splits the attack payload into multiple small packets to avoid signature matching.",
     "id": 344,
     "topic": "Web Application Hacking",
@@ -10333,7 +10333,7 @@
       "Banner Grabbing"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Tunneling",
     "id": 345,
     "topic": "Web Application Hacking",
@@ -10363,7 +10363,7 @@
       "Running the database as root."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Using Prepared Statements (Parameterized Queries).",
     "id": 346,
     "topic": "Web Application Hacking",
@@ -10395,7 +10395,7 @@
       "SECaaS (Security as a Service)"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "IaaS (Infrastructure as a Service)",
     "id": 347,
     "topic": "Cloud Computing",
@@ -10425,7 +10425,7 @@
       "Mobile Platforms"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "OT / ICS (Operational Technology / Industrial Control Systems)",
     "id": 348,
     "topic": "Cloud Computing",
@@ -10455,7 +10455,7 @@
       "A password that is too short."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "A vulnerability that is unknown to the vendor and has no available patch.",
     "id": 349,
     "topic": "Network and Perimeter Hacking",
@@ -10486,7 +10486,7 @@
       "To use only open-source software. Shutterstock"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "To never trust, always verify, regardless of where the request originates.",
     "id": 350,
     "topic": "Network and Perimeter Hacking",
@@ -10516,7 +10516,7 @@
       "Prompt Injection"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Data Poisoning",
     "id": 351,
     "topic": "General CEH",
@@ -10546,7 +10546,7 @@
       "Blueprinting"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Bluejacking",
     "id": 352,
     "topic": "Wireless Network Hacking",
@@ -10576,7 +10576,7 @@
       "Shared"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Simultaneous (Simultaneous Authentication of Equals)",
     "id": 353,
     "topic": "Wireless Network Hacking",
@@ -10606,7 +10606,7 @@
       "$100,000"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "$50,000",
     "id": 354,
     "topic": "General CEH",
@@ -10637,7 +10637,7 @@
       "Acceptable Use Policy (AUP)"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Enterprise Information Security Policy (EISP)",
     "id": 355,
     "topic": "General CEH",
@@ -10668,7 +10668,7 @@
       "GDPR"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "HIPAA",
     "id": 356,
     "topic": "General CEH",
@@ -10698,7 +10698,7 @@
       "SQL Injection"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Banner Grabbing",
     "id": 357,
     "topic": "Web Application Hacking",
@@ -10728,7 +10728,7 @@
       "T5 (Insane)"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "T5 (Insane)",
     "id": 358,
     "topic": "Network and Perimeter Hacking",
@@ -10758,7 +10758,7 @@
       "To archive data for 10 years."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "To make data recovery impossible even with laboratory- grade tools.",
     "id": 359,
     "topic": "General CEH",
@@ -10788,7 +10788,7 @@
       "Metasploit"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Google Search Engine",
     "id": 360,
     "topic": "Network and Perimeter Hacking",
@@ -10818,7 +10818,7 @@
       "State-Sponsored Hacker"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Hacktivist",
     "id": 361,
     "topic": "General CEH",
@@ -10848,7 +10848,7 @@
       "Encryption"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Security Guard",
     "id": 362,
     "topic": "Cryptography",
@@ -10878,7 +10878,7 @@
       "The vulnerability is patched."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "The affected systems are isolated to prevent the threat from spreading.",
     "id": 363,
     "topic": "General CEH",
@@ -10908,7 +10908,7 @@
       "Fault Injection Attack"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Power Analysis Attack",
     "id": 364,
     "topic": "General CEH",
@@ -10938,7 +10938,7 @@
       "Disabling all logging."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Using minimal base images and scanning for vulnerabilities.",
     "id": 365,
     "topic": "Cloud Computing",
@@ -10968,7 +10968,7 @@
       "To transfer a file."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "To listen for an incoming connection on port 4444.",
     "id": 366,
     "topic": "General CEH",
@@ -10998,7 +10998,7 @@
       "ARP"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "ICMP",
     "id": 367,
     "topic": "Network and Perimeter Hacking",
@@ -11028,7 +11028,7 @@
       "Format String Attack"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Stack-based Buffer Overflow",
     "id": 368,
     "topic": "General CEH",
@@ -11058,7 +11058,7 @@
       "All files on the server are encrypted."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "The web server runs out of available connections because many remain partially open.",
     "id": 369,
     "topic": "Network and Perimeter Hacking",
@@ -11088,7 +11088,7 @@
       "The ISP"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "The Certificate Authority (CA)",
     "id": 370,
     "topic": "Cryptography",
@@ -11118,7 +11118,7 @@
       "The process of removing logs."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Sending massive amounts of random data to a program to find crashes and vulnerabilities.",
     "id": 371,
     "topic": "Wireless Network Hacking",
@@ -11148,7 +11148,7 @@
       "UDP Scan"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Passive Discovery",
     "id": 372,
     "topic": "Network and Perimeter Hacking",
@@ -11178,7 +11178,7 @@
       "Keep the found vulnerabilities secret from the owner."
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Always obtain written permission before testing.",
     "id": 373,
     "topic": "General CEH",
@@ -11208,7 +11208,7 @@
       "Reporting"
     ],
     "source": "ceh13-03.pdf",
-    "answerStatus": "web-verified",
+    "answerStatus": "source-verified",
     "answerText": "Reporting",
     "id": 374,
     "topic": "General CEH",
@@ -26420,9 +26420,18 @@
       "https://www.examtopics.com/exams/eccouncil/312-50v13/view/"
     ],
     "communityVotes": [
-      {"answer": "B", "count": 21},
-      {"answer": "D", "count": 4},
-      {"answer": "C", "count": 1}
+      {
+        "answer": "B",
+        "count": 21
+      },
+      {
+        "answer": "D",
+        "count": 4
+      },
+      {
+        "answer": "C",
+        "count": 1
+      }
     ],
     "explanationEn": "Self-authored note: Triple DES applies DES three times to each 64-bit block and can use three independent DES keys, each with 56 effective key bits. Option B received the most community votes (21 of 26 recorded votes), but this answer has not been independently verified against an authoritative source.",
     "id": 917,
@@ -26457,7 +26466,10 @@
       "https://www.examtopics.com/exams/eccouncil/312-50v13/view/"
     ],
     "communityVotes": [
-      {"answer": "D", "count": 6}
+      {
+        "answer": "D",
+        "count": 6
+      }
     ],
     "explanationEn": "Self-authored note: Long-term, stealthy access used to collect sensitive information matches the defining behavior of an advanced persistent threat. Option D received all 6 recorded community votes, but this answer has not been independently verified against an authoritative source.",
     "id": 918,
@@ -26492,8 +26504,14 @@
       "https://www.examtopics.com/exams/eccouncil/312-50v13/view/"
     ],
     "communityVotes": [
-      {"answer": "C", "count": 14},
-      {"answer": "D", "count": 1}
+      {
+        "answer": "C",
+        "count": 14
+      },
+      {
+        "answer": "D",
+        "count": 1
+      }
     ],
     "explanationEn": "Self-authored note: The T0 timing template sends probes extremely slowly and is intended to reduce scan timing signatures, although the other flags still affect visibility. Option C received the most community votes (14 of 15 recorded votes), but this answer has not been independently verified against authoritative Nmap documentation.",
     "id": 919,
@@ -26528,7 +26546,10 @@
       "https://www.examtopics.com/exams/eccouncil/312-50v13/view/"
     ],
     "communityVotes": [
-      {"answer": "B", "count": 5}
+      {
+        "answer": "B",
+        "count": 5
+      }
     ],
     "explanationEn": "Self-authored note: WPA3-Enterprise includes an optional 192-bit security mode using stronger cryptographic suites for sensitive environments. Option B received all 5 recorded community votes, but this answer has not been independently verified against an authoritative source.",
     "id": 920,
@@ -26563,8 +26584,14 @@
       "https://www.examtopics.com/exams/eccouncil/312-50v13/view/"
     ],
     "communityVotes": [
-      {"answer": "C", "count": 9},
-      {"answer": "A", "count": 3}
+      {
+        "answer": "C",
+        "count": 9
+      },
+      {
+        "answer": "A",
+        "count": 3
+      }
     ],
     "explanationEn": "Self-authored note: PHP error display and verbosity settings are commonly controlled in php.ini, and an unsafe configuration can disclose paths, stack details, or other implementation information. Option C received the most community votes (9 of 12 recorded votes), but this answer has not been independently verified against an authoritative source.",
     "id": 921,
@@ -26599,8 +26626,14 @@
       "https://www.examtopics.com/exams/eccouncil/312-50v13/view/"
     ],
     "communityVotes": [
-      {"answer": "D", "count": 7},
-      {"answer": "C", "count": 2}
+      {
+        "answer": "D",
+        "count": 7
+      },
+      {
+        "answer": "C",
+        "count": 2
+      }
     ],
     "explanationEn": "Self-authored note: Bluto is an automated reconnaissance tool that combines DNS enumeration and related OSINT sources to collect domains, hosts, addresses, records, and Whois information. Option D received the most community votes (7 of 9 recorded votes), but this answer has not been independently verified against an authoritative source.",
     "id": 922,
@@ -26635,8 +26668,14 @@
       "https://www.examtopics.com/exams/eccouncil/312-50v13/view/"
     ],
     "communityVotes": [
-      {"answer": "D", "count": 17},
-      {"answer": "B", "count": 2}
+      {
+        "answer": "D",
+        "count": 17
+      },
+      {
+        "answer": "B",
+        "count": 2
+      }
     ],
     "explanationEn": "Self-authored note: netcat is a general-purpose network connection and data-transfer utility, not an offline password-hash cracking tool. Option D received the most community votes (17 of 19 recorded votes), but this answer has not been independently verified against an authoritative source.",
     "id": 923,
@@ -26671,7 +26710,10 @@
       "https://www.examtopics.com/exams/eccouncil/312-50v13/view/"
     ],
     "communityVotes": [
-      {"answer": "D", "count": 2}
+      {
+        "answer": "D",
+        "count": 2
+      }
     ],
     "explanationEn": "Self-authored note: The related: operator is intended to find pages or sites similar to a specified URL. Option D received all 2 recorded community votes, but this answer has not been independently verified against an authoritative source.",
     "id": 924,
@@ -26706,8 +26748,14 @@
       "https://www.examtopics.com/exams/eccouncil/312-50v13/view/"
     ],
     "communityVotes": [
-      {"answer": "B", "count": 13},
-      {"answer": "D", "count": 1}
+      {
+        "answer": "B",
+        "count": 13
+      },
+      {
+        "answer": "D",
+        "count": 1
+      }
     ],
     "explanationEn": "Self-authored note: Creating or packaging a client-side backdoor for later delivery corresponds to the weaponization stage of the cyber kill chain. Option B received the most community votes (13 of 14 recorded votes), but this answer has not been independently verified against an authoritative source.",
     "id": 925,

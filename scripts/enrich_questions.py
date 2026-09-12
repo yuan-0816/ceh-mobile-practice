@@ -197,7 +197,7 @@ def main() -> None:
     for question in questions:
         if question["source"] != "ceh13-03.pdf":
             continue
-        if question["answerStatus"] == "source-verified":
+        if question["answerStatus"] == "source-verified" or question.get("sourceAnswerText"):
             question["explanationEn"] = "The source marks the correct option in bold but does not include an explanation."
             question["explanationStatus"] = "source-answer-only"
             continue

@@ -1251,9 +1251,9 @@
       "Untethered Jailbreaking"
     ],
     "optionsZh": [],
-    "correctIndex": 0,
-    "answerLetter": "A",
-    "answerText": "Tethered Jailbreaking",
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Semi-Untethered Jailbreaking",
     "sourceAnswerText": "Semi-Untethered Jailbreaking",
     "answerStatus": "source-verified",
     "topic": "Mobile Platform, IoT, and OT Hacking",
