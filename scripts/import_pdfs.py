@@ -215,6 +215,7 @@ def apply_source_answers(questions: list[dict], answers: dict[int, str], source:
         ]
         if exact_matches:
             question["correctIndex"] = exact_matches[0]
+            question["answerText"] = question["options"][exact_matches[0]]
             question["answerMatchScore"] = 1.0
             continue
         scores = []
@@ -226,6 +227,7 @@ def apply_source_answers(questions: list[dict], answers: dict[int, str], source:
             scores.append(score)
         best_index = max(range(len(scores)), key=scores.__getitem__)
         question["correctIndex"] = best_index
+        question["answerText"] = question["options"][best_index]
         question["answerMatchScore"] = round(scores[best_index], 3)
 
 
