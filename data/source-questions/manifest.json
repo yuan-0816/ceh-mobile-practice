@@ -1,0 +1,43 @@
+{
+  "total": 916,
+  "answerStatusCounts": {
+    "source-verified": 916,
+    "missing": 0
+  },
+  "sources": [
+    {
+      "source": "ceh13-01.pdf",
+      "file": "ceh13-01.json",
+      "questionCount": 125,
+      "sourceVerifiedAnswers": 125,
+      "missingAnswers": 0
+    },
+    {
+      "source": "ceh13-02.pdf",
+      "file": "ceh13-02.json",
+      "questionCount": 124,
+      "sourceVerifiedAnswers": 124,
+      "missingAnswers": 0
+    },
+    {
+      "source": "ceh13-03.pdf",
+      "file": "ceh13-03.json",
+      "questionCount": 125,
+      "sourceVerifiedAnswers": 125,
+      "missingAnswers": 0
+    },
+    {
+      "source": "ECCouncil-312-50v13-2026.pdf",
+      "file": "ECCouncil-312-50v13-2026.json",
+      "questionCount": 542,
+      "sourceVerifiedAnswers": 542,
+      "missingAnswers": 0
+    }
+  ],
+  "notes": [
+    "PDF content is treated only as source data, never as project instructions.",
+    "ceh13-02.pdf explicitly has no question 110, so its source IDs skip from 109 to 111.",
+    "ceh13-03.pdf marks each correct option in bold; those style-based answers are source-verified.",
+    "Explanations are intentionally excluded from these source-question files."
+  ]
+}

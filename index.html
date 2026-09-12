@@ -3,25 +3,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#111827" />
-  <meta name="description" content="CEH v13 手機刷題 PWA" />
-  <script>
-    try {
-      const savedTheme = localStorage.getItem('ceh-practice-theme');
-      document.documentElement.dataset.theme = savedTheme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-    } catch { document.documentElement.dataset.theme = 'light'; }
-  </script>
+  <meta name="theme-color" content="#edf0e9" />
+  <meta name="description" content="CEH v13 單題閱讀練習" />
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="icon" href="icons/icon-192.png" />
   <link rel="apple-touch-icon" href="icons/icon-192.png" />
-  <link rel="stylesheet" href="styles.css?v=10" />
-  <title>CEH v13 Practice</title>
+  <link rel="stylesheet" href="styles.css?v=21" />
+  <title>CEH Mobile Practice</title>
 </head>
 <body>
   <div id="app"></div>
   <footer class="site-disclaimer">
     本站為非官方 CEH 學習練習工具，僅供教育用途，與 EC-Council 無關聯或背書關係。
   </footer>
-  <script src="app.js?v=10" defer></script>
+  <script src="app.js?v=16" defer></script>
 </body>
 </html>

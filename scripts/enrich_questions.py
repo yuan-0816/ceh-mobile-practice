@@ -197,6 +197,10 @@ def main() -> None:
     for question in questions:
         if question["source"] != "ceh13-03.pdf":
             continue
+        if question["answerStatus"] == "source-verified":
+            question["explanationEn"] = "The source marks the correct option in bold but does not include an explanation."
+            question["explanationStatus"] = "source-answer-only"
+            continue
         number = question["sourceQuestionId"]
         correct_index = ANSWERS[number]
         question["correctIndex"] = correct_index

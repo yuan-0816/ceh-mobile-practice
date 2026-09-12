@@ -1,0 +1,2502 @@
+[
+  {
+    "id": 250,
+    "sourceQuestionId": 1,
+    "question": "A security researcher is analyzing a target organization's publicly accessible cloud infrastructure. While reviewing the website's HTML source code, the researcher discovers direct references to files hosted on Amazon S3. What is the most effective way to identify additional publicly accessible bucket URLs used by the target?",
+    "questionZh": "",
+    "options": [
+      "Exploit XSS to force the page to reveal the S3 links.",
+      "Use Google advanced search operators to enumerate S3 bucket URLs.",
+      "Perform packet sniffing to intercept internal S3 bucket names.",
+      "Use SQL injection to extract internal file paths from the database."
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Use Google advanced search operators to enumerate S3 bucket URLs.",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Cloud Computing",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 251,
+    "sourceQuestionId": 2,
+    "question": "A penetration tester discovers that a web application is using outdated SSL/TLS protocols (TLS 1.0) to secure communication. What is the most effective way to exploit this vulnerability?",
+    "questionZh": "",
+    "options": [
+      "Conduct a Cross-Site Scripting (XSS) attack on the application.",
+      "Perform a brute-force attack on the SSL/TLS handshake.",
+      "Execute a SQL injection attack on the application's backend.",
+      "Use a man-in-the-middle (MitM) attack to intercept and decrypt traffic."
+    ],
+    "optionsZh": [],
+    "correctIndex": 3,
+    "answerLetter": "D",
+    "answerText": "Use a man-in-the-middle (MitM) attack to intercept and decrypt traffic.",
+    "sourceAnswerText": "D",
+    "answerStatus": "source-verified",
+    "topic": "Web Application Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 252,
+    "sourceQuestionId": 3,
+    "question": "During routine network monitoring, the blue team notices several LLMNR and NBT-NS broadcasts originating from a workstation attempting to resolve an internal hostname. They also observe suspicious responses claiming to be the requested host. What type of password-cracking setup is likely being staged?",
+    "questionZh": "",
+    "options": [
+      "Use GPU resources to guess passphrases quickly.",
+      "Decrypt login tokens from wireless networks.",
+      "Match captured credentials with rainbow tables.",
+      "Exploit name resolution to capture password hashes."
+    ],
+    "optionsZh": [],
+    "correctIndex": 3,
+    "answerLetter": "D",
+    "answerText": "Exploit name resolution to capture password hashes.",
+    "sourceAnswerText": "D",
+    "answerStatus": "source-verified",
+    "topic": "Wireless Network Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 253,
+    "sourceQuestionId": 4,
+    "question": "During a red team simulation, an attacker attempts to deliver a payload to a web server. The approach involves crafting packets with intentionally malformed checksums so that the packets are accepted by the IDS but discarded by the destination system. This is which evasion technique?",
+    "questionZh": "",
+    "options": [
+      "Polymorphic shellcode",
+      "Insertion attack",
+      "Session splicing",
+      "Fragmentation attack"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Insertion attack",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Web Application Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 254,
+    "sourceQuestionId": 5,
+    "question": "A penetration tester visits https://www.targetcorp.com/robots.txt and finds Disallow entries referencing /admin-panel/ and /backup/. Directly visiting these paths allows access to sensitive files. Which stage is this?",
+    "questionZh": "",
+    "options": [
+      "Executing CSRF attacks.",
+      "Gathering information through exposed indexing instructions.",
+      "Leveraging directory traversal flaws.",
+      "Injecting malicious SQL queries."
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Gathering information through exposed indexing instructions.",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Cloud Computing",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 255,
+    "sourceQuestionId": 6,
+    "question": "An Android application stores sensitive user data but does not use proper encryption for data at rest. What is the most effective exploit?",
+    "questionZh": "",
+    "options": [
+      "Access the local storage to retrieve data directly from the device.",
+      "Perform a brute-force attack on credentials.",
+      "Use SQL injection on the backend.",
+      "Execute XSS to steal cookies."
+    ],
+    "optionsZh": [],
+    "correctIndex": 0,
+    "answerLetter": "A",
+    "answerText": "Access the local storage to retrieve data directly from the device.",
+    "sourceAnswerText": "A",
+    "answerStatus": "source-verified",
+    "topic": "Web Application Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 256,
+    "sourceQuestionId": 7,
+    "question": "To hijack a legitimate user's session in a web app using HTTPS and MFA without triggering alerts, which advanced technique should be used?",
+    "questionZh": "",
+    "options": [
+      "Man-in-the-middle attack via network device.",
+      "Session token replay.",
+      "Exploit a browser zero-day vulnerability to inject scripts.",
+      "Perform a CSRF attack."
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "Exploit a browser zero-day vulnerability to inject scripts.",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "Web Application Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 257,
+    "sourceQuestionId": 8,
+    "question": "An attacker places a malicious VM on the same physical server as a target VM in a cloud environment and extracts keys using CPU timing analysis. What is this?",
+    "questionZh": "",
+    "options": [
+      "Side-channel attack",
+      "Metadata spoofing",
+      "Cloud cryptojacking",
+      "Cache poisoned denial of service (CPDoS)"
+    ],
+    "optionsZh": [],
+    "correctIndex": 0,
+    "answerLetter": "A",
+    "answerText": "Side-channel attack",
+    "sourceAnswerText": "A",
+    "answerStatus": "source-verified",
+    "topic": "Cloud Computing",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 258,
+    "sourceQuestionId": 9,
+    "question": "To enumerate all running processes on a Linux host via SNMPv2 (community \"public\"), which Nmap command is most effective?",
+    "questionZh": "",
+    "options": [
+      "nmap -sU -p 161 --script snmp-sysdescr",
+      "nmap -sU -p 161 --script snmp-interfaces",
+      "nmap -sU -p 161 --script snmp-win32-services",
+      "nmap -sU -p 161 --script snmp-processes"
+    ],
+    "optionsZh": [],
+    "correctIndex": 3,
+    "answerLetter": "D",
+    "answerText": "nmap -sU -p 161 --script snmp-processes",
+    "sourceAnswerText": "D",
+    "answerStatus": "source-verified",
+    "topic": "Network and Perimeter Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 259,
+    "sourceQuestionId": 10,
+    "question": "A mobile app session tokens are not invalidated upon logout. What is the most effective exploit?",
+    "questionZh": "",
+    "options": [
+      "Perform a replay attack by using the same token after logout.",
+      "Brute-force session tokens.",
+      "SQL injection for tokens.",
+      "CSRF attack."
+    ],
+    "optionsZh": [],
+    "correctIndex": 0,
+    "answerLetter": "A",
+    "answerText": "Perform a replay attack by using the same token after logout.",
+    "sourceAnswerText": "A",
+    "answerStatus": "source-verified",
+    "topic": "Web Application Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 260,
+    "sourceQuestionId": 11,
+    "question": "Which technique evades an IDS/Firewall that blocks non-standard ports?",
+    "questionZh": "",
+    "options": [
+      "Use a low-and-slow scan.",
+      "Conduct a full TCP Connect scan.",
+      "Perform a SYN flood.",
+      "Execute a TCP ACK scan to map rules."
+    ],
+    "optionsZh": [],
+    "correctIndex": 0,
+    "answerLetter": "A",
+    "answerText": "Use a low-and-slow scan.",
+    "sourceAnswerText": "A",
+    "answerStatus": "source-verified",
+    "topic": "Network and Perimeter Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 261,
+    "sourceQuestionId": 12,
+    "question": "An Industrial Control System (ICS) uses weak default passwords. What is the most effective exploit?",
+    "questionZh": "",
+    "options": [
+      "Gain unauthorized access to the ICS and control operations.",
+      "Brute-force default passwords.",
+      "Conduct a DoS attack.",
+      "Execute a CSRF attack."
+    ],
+    "optionsZh": [],
+    "correctIndex": 0,
+    "answerLetter": "A",
+    "answerText": "Gain unauthorized access to the ICS and control operations.",
+    "sourceAnswerText": "A",
+    "answerStatus": "source-verified",
+    "topic": "General CEH",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 262,
+    "sourceQuestionId": 13,
+    "question": "What is the most appropriate approach to test for SQL injection in a login form?",
+    "questionZh": "",
+    "options": [
+      "Enter ' OR '1'='1 in the username/password fields.",
+      "Brute-force the login page.",
+      "Perform a directory traversal attack.",
+      "Inject JavaScript for XSS testing."
+    ],
+    "optionsZh": [],
+    "correctIndex": 0,
+    "answerLetter": "A",
+    "answerText": "Enter ' OR '1'='1 in the username/password fields.",
+    "sourceAnswerText": "A",
+    "answerStatus": "source-verified",
+    "topic": "Web Application Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 263,
+    "sourceQuestionId": 14,
+    "question": "To obtain network credentials without raising suspicion from HR, which social engineering technique is most effective?",
+    "questionZh": "",
+    "options": [
+      "Fake social media profiles.",
+      "Create a convincing fake onboarding portal.",
+      "Pose as a new employee for password reset.",
+      "Phishing email with a fake HR policy."
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Create a convincing fake onboarding portal.",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Social Engineering",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 264,
+    "sourceQuestionId": 15,
+    "question": "Which protocol uses the \"Three-way Handshake\" (SYN, SYN-ACK, ACK) which can be exploited for a SYN stealth scan?",
+    "questionZh": "",
+    "options": [
+      "UDP",
+      "TCP",
+      "ICMP",
+      "IGMP"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "TCP",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Network and Perimeter Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 265,
+    "sourceQuestionId": 16,
+    "question": "A hacker uses intitle:index of \"config\" in Google. This is an example of what?",
+    "questionZh": "",
+    "options": [
+      "Social Engineering",
+      "Google Hacking (Dorking)",
+      "Banner Grabbing",
+      "Vulnerability Scanning"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Google Hacking (Dorking)",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Social Engineering",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 266,
+    "sourceQuestionId": 17,
+    "question": "Which Nmap flag is used to perform an OS fingerprinting scan?",
+    "questionZh": "",
+    "options": [
+      "-sV",
+      "-sS",
+      "-O",
+      "-p"
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "-O",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "Network and Perimeter Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 267,
+    "sourceQuestionId": 18,
+    "question": "What is the main difference between a Black Box and a White Box penetration test?",
+    "questionZh": "",
+    "options": [
+      "Black Box has full knowledge; White Box has none.",
+      "White Box has full knowledge; Black Box has none.",
+      "Both have partial knowledge.",
+      "Black Box is done by internal employees."
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "White Box has full knowledge; Black Box has none.",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "General CEH",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 268,
+    "sourceQuestionId": 19,
+    "question": "Which tool is most commonly used for intercepting and modifying web traffic (Proxy)?",
+    "questionZh": "",
+    "options": [
+      "Wireshark",
+      "Burp Suite",
+      "Nmap",
+      "Metasploit"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Burp Suite",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Network and Perimeter Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 269,
+    "sourceQuestionId": 20,
+    "question": "In the context of IoT security, what does \"Shodan\" primarily help a researcher find?",
+    "questionZh": "",
+    "options": [
+      "WiFi passwords",
+      "Publicly accessible internet-connected devices",
+      "Malware source code",
+      "Personal emails"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Publicly accessible internet-connected devices",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Wireless Network Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 270,
+    "sourceQuestionId": 21,
+    "question": "A network administrator is configuring a firewall to block all traffic except for web browsing. Which ports should be left open to allow both standard and encrypted web traffic?",
+    "questionZh": "",
+    "options": [
+      "21 and 22",
+      "25 and 110",
+      "80 and 443",
+      "53 and 67"
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "80 and 443",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "Network and Perimeter Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 271,
+    "sourceQuestionId": 22,
+    "question": "A penetration tester is using a tool that sends a series of TCP packets with different flags (FIN, URG, PSH) to a target to determine the operating system based on how it responds. What is this technique called?",
+    "questionZh": "",
+    "options": [
+      "Passive Fingerprinting",
+      "Active OS Fingerprinting",
+      "Banner Grabbing",
+      "Port Scanning"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Active OS Fingerprinting",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Network and Perimeter Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 272,
+    "sourceQuestionId": 23,
+    "question": "Which of the following Nmap scans is considered the most \"stealthy\" because it does not complete the full TCP connection and is less likely to be logged by basic application-level logs?",
+    "questionZh": "",
+    "options": [
+      "TCP Connect Scan (-sT)",
+      "Stealth SYN Scan (-sS)",
+      "UDP Scan (-sU)",
+      "IDLE Scan (-sI)"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Stealth SYN Scan (-sS)",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Network and Perimeter Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 273,
+    "sourceQuestionId": 24,
+    "question": "During a vulnerability assessment, a security professional identifies a flaw that allows an attacker to redirect users to a malicious website by exploiting the trust of a legitimate site. Which type of attack is this?",
+    "questionZh": "",
+    "options": [
+      "SQL Injection",
+      "Buffer Overflow",
+      "Cross-Site Scripting (XSS)",
+      "Privilege Escalation"
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "Cross-Site Scripting (XSS)",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "Web Application Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 274,
+    "sourceQuestionId": 25,
+    "question": "What is the primary purpose of a \"Vulnerability Management Life Cycle\"?",
+    "questionZh": "",
+    "options": [
+      "To buy the most expensive security software.",
+      "To continuously identify, prioritize, and remediate security weaknesses.",
+      "To arrest hackers after an attack.",
+      "To encrypt all internal emails."
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "To continuously identify, prioritize, and remediate security weaknesses.",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "General CEH",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 275,
+    "sourceQuestionId": 26,
+    "question": "Which of the following tools is a command-line network analyzer that allows a user to display TCP/IP and other packets being transmitted or received over a network?",
+    "questionZh": "",
+    "options": [
+      "Nmap",
+      "Metasploit",
+      "Tcpdump",
+      "Nessus"
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "Tcpdump",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "Network and Perimeter Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 276,
+    "sourceQuestionId": 27,
+    "question": "An attacker is trying to identify the version of a web server by analyzing the header information returned in an HTTP response. This is an example of:",
+    "questionZh": "",
+    "options": [
+      "Footprinting",
+      "Banner Grabbing",
+      "Enumeration",
+      "Social Engineering"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Banner Grabbing",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Web Application Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 277,
+    "sourceQuestionId": 28,
+    "question": "In a \"Ping Sweep,\" which protocol is primarily used to determine if multiple hosts on a network are alive?",
+    "questionZh": "",
+    "options": [
+      "TCP",
+      "UDP",
+      "ICMP",
+      "SNMP"
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "ICMP",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "Network and Perimeter Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 278,
+    "sourceQuestionId": 29,
+    "question": "Which of the following is a common framework used to rate the severity of software vulnerabilities on a scale of 0 to 10?",
+    "questionZh": "",
+    "options": [
+      "OWASP",
+      "NIST",
+      "CVSS (Common Vulnerability Scoring System)",
+      "GDPR"
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "CVSS (Common Vulnerability Scoring System)",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "General CEH",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 279,
+    "sourceQuestionId": 30,
+    "question": "A penetration tester finds a server that responds to an \"Inverse Mapping\" scan. What can the tester conclude from this?",
+    "questionZh": "",
+    "options": [
+      "The target is a Windows machine.",
+      "There is likely a firewall or packet filter that identifies which ports are open/closed.",
+      "The server is vulnerable to SQL injection.",
+      "The server is offline."
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "There is likely a firewall or packet filter that identifies which ports are open/closed.",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Web Application Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 280,
+    "sourceQuestionId": 31,
+    "question": "Which of the following Nmap commands performs a \"Half-Open\" scan that does not complete the TCP three-way handshake?",
+    "questionZh": "",
+    "options": [
+      "nmap -sT",
+      "nmap -sS",
+      "nmap -sU",
+      "nmap -sA"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "nmap -sS",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Network and Perimeter Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 281,
+    "sourceQuestionId": 32,
+    "question": "An attacker sends a TCP packet with the FIN, PSH, and URG flags set to a target port. If the port is closed, the target sends an RST. If the port is open, it ignores the packet. What type of scan is this?",
+    "questionZh": "",
+    "options": [
+      "Null Scan",
+      "Xmas Scan",
+      "Stealth Scan",
+      "IDLE Scan"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Xmas Scan",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Network and Perimeter Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 282,
+    "sourceQuestionId": 33,
+    "question": "During the enumeration phase, you find that port 445 is open. Which protocol is likely running and could be used to enumerate user accounts?",
+    "questionZh": "",
+    "options": [
+      "HTTP",
+      "SMTP",
+      "SMB",
+      "DNS"
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "SMB",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "Web Application Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 283,
+    "sourceQuestionId": 34,
+    "question": "What is the default community string for SNMPv1 and SNMPv2 that often allows read-only access to network device information?",
+    "questionZh": "",
+    "options": [
+      "public",
+      "private",
+      "admin",
+      "secret"
+    ],
+    "optionsZh": [],
+    "correctIndex": 0,
+    "answerLetter": "A",
+    "answerText": "public",
+    "sourceAnswerText": "A",
+    "answerStatus": "source-verified",
+    "topic": "Network and Perimeter Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 284,
+    "sourceQuestionId": 35,
+    "question": "A penetration tester uses the command fping -a -g 192.168.1.0/24. What is the primary goal of this command?",
+    "questionZh": "",
+    "options": [
+      "To find open ports on a single host.",
+      "To identify active (alive) hosts within a subnet.",
+      "To perform a banner grabbing attack.",
+      "To capture packets on the local network."
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "To identify active (alive) hosts within a subnet.",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Network and Perimeter Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 285,
+    "sourceQuestionId": 36,
+    "question": "Which tool is specialized in extracting metadata from public documents (PDF, DOCX) found on a target's website to identify usernames and software versions?",
+    "questionZh": "",
+    "options": [
+      "Maltego",
+      "Recon-ng",
+      "FOCA",
+      "Wireshark"
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "FOCA",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "General CEH",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 286,
+    "sourceQuestionId": 37,
+    "question": "In a \"Side-Channel Attack\" on a cloud provider, what is the attacker primarily trying to exploit?",
+    "questionZh": "",
+    "options": [
+      "A flaw in the web application's code.",
+      "Physical information leaked by the hardware (e.g., power consumption, timing).",
+      "The lack of a firewall on the virtual machine.",
+      "Weak passwords used by the cloud administrator."
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Physical information leaked by the hardware (e.g., power consumption, timing).",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Cloud Computing",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 287,
+    "sourceQuestionId": 38,
+    "question": "Which type of password attack involves trying every possible combination of characters until the correct one is found?",
+    "questionZh": "",
+    "options": [
+      "Dictionary Attack",
+      "Brute-Force Attack",
+      "Hybrid Attack",
+      "Rainbow Table Attack"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Brute-Force Attack",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "General CEH",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 288,
+    "sourceQuestionId": 39,
+    "question": "You have captured a password hash. Instead of cracking it, you use the hash itself to authenticate to a remote service. What is this technique called?",
+    "questionZh": "",
+    "options": [
+      "Salting",
+      "Pass-the-Hash (PtH)",
+      "Birthday Attack",
+      "Precomputed Hash Attack"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Pass-the-Hash (PtH)",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Cryptography",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 289,
+    "sourceQuestionId": 40,
+    "question": "What is the primary purpose of a \"Honeypot\" in a network?",
+    "questionZh": "",
+    "options": [
+      "To encrypt all outgoing traffic.",
+      "To distract and monitor attackers by providing a decoy system.",
+      "To act as a high-speed backup server.",
+      "To block all incoming SQL injection attempts."
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "To distract and monitor attackers by providing a decoy system.",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Web Application Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 290,
+    "sourceQuestionId": 41,
+    "question": "Which of the following is a vulnerability scanner that provides comprehensive reports on missing patches and misconfigurations?",
+    "questionZh": "",
+    "options": [
+      "Nmap",
+      "Metasploit",
+      "Nessus",
+      "Netcat"
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "Nessus",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "Network and Perimeter Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 291,
+    "sourceQuestionId": 42,
+    "question": "Which DNS record type should a penetration tester look for to identify the mail servers of an organization?",
+    "questionZh": "",
+    "options": [
+      "A record",
+      "PTR record",
+      "MX record",
+      "CNAME record"
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "MX record",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "Network and Perimeter Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 292,
+    "sourceQuestionId": 43,
+    "question": "A hacker uses a tool to impersonate a legitimate Wireless Access Point, tricking users into connecting to it. What is this attack called?",
+    "questionZh": "",
+    "options": [
+      "Bluejacking",
+      "Evil Twin",
+      "Wardriving",
+      "MAC Spoofing"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Evil Twin",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Wireless Network Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 293,
+    "sourceQuestionId": 44,
+    "question": "Which tool is used to perform man-in-the-middle attacks, DNS spoofing, and credential sniffing on a local network?",
+    "questionZh": "",
+    "options": [
+      "John the Ripper",
+      "Ettercap",
+      "Nikto",
+      "Snort"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Ettercap",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Network and Perimeter Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 294,
+    "sourceQuestionId": 45,
+    "question": "What does the \"D\" in D.O.S. stand for?",
+    "questionZh": "",
+    "options": [
+      "Distributed",
+      "Database",
+      "Denial",
+      "Detection"
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "Denial",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "General CEH",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 295,
+    "sourceQuestionId": 46,
+    "question": "Which attack targets the \"human element\" of security through manipulation and deceit?",
+    "questionZh": "",
+    "options": [
+      "Buffer Overflow",
+      "SQL Injection",
+      "Social Engineering",
+      "Rootkit Installation"
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "Social Engineering",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "Web Application Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 296,
+    "sourceQuestionId": 47,
+    "question": "A tester finds a vulnerability where an application stores sensitive data in the URL (e.g., ?session_id=123). This is an example of:",
+    "questionZh": "",
+    "options": [
+      "Improper Error Handling",
+      "Sensitive Data Exposure",
+      "Insecure Deserialization",
+      "Command Injection"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Sensitive Data Exposure",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Web Application Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 297,
+    "sourceQuestionId": 48,
+    "question": "Which Nmap script category is used to discover vulnerabilities on a target system?",
+    "questionZh": "",
+    "options": [
+      "discovery",
+      "intrusive",
+      "vuln",
+      "safe"
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "vuln",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "Network and Perimeter Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 298,
+    "sourceQuestionId": 49,
+    "question": "What is the purpose of \"Salting\" a password before hashing it?",
+    "questionZh": "",
+    "options": [
+      "To make the hashing process faster.",
+      "To prevent the use of precomputed Rainbow Tables.",
+      "To encrypt the password so it can be decrypted later.",
+      "To limit the length of the password."
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "To prevent the use of precomputed Rainbow Tables.",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Cryptography",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 299,
+    "sourceQuestionId": 50,
+    "question": "Which type of malware records every stroke made on a keyboard?",
+    "questionZh": "",
+    "options": [
+      "Ransomware",
+      "Keylogger",
+      "Trojan",
+      "Worm"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Keylogger",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Malware Threats",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 300,
+    "sourceQuestionId": 51,
+    "question": "In the \"Cyber Kill Chain\" model, which phase comes immediately after Reconnaissance?",
+    "questionZh": "",
+    "options": [
+      "Delivery",
+      "Weaponization",
+      "Exploitation",
+      "Installation"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Weaponization",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Reconnaissance Techniques",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 301,
+    "sourceQuestionId": 52,
+    "question": "Which command is used on a Windows system to view the local routing table?",
+    "questionZh": "",
+    "options": [
+      "ipconfig /all",
+      "tracert",
+      "route print",
+      "netstat -an"
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "route print",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "General CEH",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 302,
+    "sourceQuestionId": 53,
+    "question": "An attacker uses a fraudulent email that appears to be from a high- ranking executive to target a specific employee. This is known as:",
+    "questionZh": "",
+    "options": [
+      "Phishing",
+      "Spear Phishing",
+      "Vishing",
+      "Smishing"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Spear Phishing",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Social Engineering",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 303,
+    "sourceQuestionId": 54,
+    "question": "Which protocol operates on Port 22?",
+    "questionZh": "",
+    "options": [
+      "Telnet",
+      "SSH",
+      "FTP",
+      "RDP"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "SSH",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "General CEH",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 304,
+    "sourceQuestionId": 55,
+    "question": "What is the main goal of \"Footprinting\"?",
+    "questionZh": "",
+    "options": [
+      "To gain administrative access.",
+      "To crash the target server.",
+      "To collect as much information as possible about a target network.",
+      "To delete log files."
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "To collect as much information as possible about a target network.",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "Network and Perimeter Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 305,
+    "sourceQuestionId": 56,
+    "question": "Which of the following is an example of an \"Asymmetric\" encryption algorithm?",
+    "questionZh": "",
+    "options": [
+      "AES",
+      "DES",
+      "RSA",
+      "Blowfish"
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "RSA",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "Cryptography",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 306,
+    "sourceQuestionId": 57,
+    "question": "What is a \"Rootkit\" primarily used for?",
+    "questionZh": "",
+    "options": [
+      "To spread viruses to other computers.",
+      "To crack passwords using a GPU.",
+      "To maintain hidden access to a system at the OS level.",
+      "To perform a DDoS attack."
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "To maintain hidden access to a system at the OS level.",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "Malware Threats",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 307,
+    "sourceQuestionId": 58,
+    "question": "Which HTTP method is typically used to upload a file to a web server?",
+    "questionZh": "",
+    "options": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "PUT",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "Web Application Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 308,
+    "sourceQuestionId": 59,
+    "question": "A penetration tester discovers a \"Cross-Site Scripting (XSS)\" vulnerability. What is the primary risk?",
+    "questionZh": "",
+    "options": [
+      "Deleting the server's database.",
+      "Executing malicious scripts in the victim's browser.",
+      "Gaining root access to the web server.",
+      "Cracking the server's SSH password."
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Executing malicious scripts in the victim's browser.",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Web Application Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 309,
+    "sourceQuestionId": 60,
+    "question": "Which tool can be used to scan for open wireless networks while driving?",
+    "questionZh": "",
+    "options": [
+      "Aircrack-ng",
+      "NetStumbler",
+      "Wireshark",
+      "Hashcat"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "NetStumbler",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Wireless Network Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 310,
+    "sourceQuestionId": 61,
+    "question": "A hacker exploits a vulnerability in the WPA2 protocol that allows them to decrypt traffic without knowing the password by manipulating the 4-way handshake. What is this attack called?",
+    "questionZh": "",
+    "options": [
+      "Blueborne",
+      "KRACK (Key Reinstallation Attack)",
+      "ChopChop Attack",
+      "Fragmentation Attack"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "KRACK (Key Reinstallation Attack)",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Wireless Network Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 311,
+    "sourceQuestionId": 62,
+    "question": "In Burp Suite, which tab is used to automatically scan a web application for vulnerabilities like SQL injection or XSS?",
+    "questionZh": "",
+    "options": [
+      "Repeater",
+      "Intruder",
+      "Dashboard / Scanner",
+      "Sequencer"
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "Dashboard / Scanner",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "Web Application Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 312,
+    "sourceQuestionId": 63,
+    "question": "Which type of SQL injection does not return any data directly to the attacker but instead relies on the database's response to TRUE/FALSE questions?",
+    "questionZh": "",
+    "options": [
+      "In-band SQLi",
+      "Blind SQLi",
+      "Union-based SQLi",
+      "Error-based SQLi"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Blind SQLi",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Web Application Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 313,
+    "sourceQuestionId": 64,
+    "question": "What occurs when a program writes more data to a memory buffer than it can hold, potentially allowing an attacker to execute arbitrary code?",
+    "questionZh": "",
+    "options": [
+      "Race Condition",
+      "Buffer Overflow",
+      "Integer Underflow",
+      "Memory Leak"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Buffer Overflow",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "General CEH",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 314,
+    "sourceQuestionId": 65,
+    "question": "What is the practice of hiding a secret message or file within another non-secret file (like an image or audio file)?",
+    "questionZh": "",
+    "options": [
+      "Cryptography",
+      "Steganography",
+      "Obfuscation",
+      "Encapsulation"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Steganography",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Cryptography",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 315,
+    "sourceQuestionId": 66,
+    "question": "In the Cloud Shared Responsibility Model, who is responsible for the physical security of the data center in a SaaS (Software as a Service) environment?",
+    "questionZh": "",
+    "options": [
+      "The Cloud Service Provider (CSP)",
+      "The Customer",
+      "Both the CSP and the Customer",
+      "The Internet Service Provider (ISP)"
+    ],
+    "optionsZh": [],
+    "correctIndex": 0,
+    "answerLetter": "A",
+    "answerText": "The Cloud Service Provider (CSP)",
+    "sourceAnswerText": "A",
+    "answerStatus": "source-verified",
+    "topic": "Cloud Computing",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 316,
+    "sourceQuestionId": 67,
+    "question": "Which lightweight messaging protocol is commonly used in IoT (Internet of Things) devices for communication?",
+    "questionZh": "",
+    "options": [
+      "HTTP",
+      "MQTT",
+      "SSH",
+      "FTP"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "MQTT",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Web Application Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 317,
+    "sourceQuestionId": 68,
+    "question": "An attacker provides specifically crafted input to a Machine Learning model to cause it to make a wrong classification. This is known as:",
+    "questionZh": "",
+    "options": [
+      "Model Inversion",
+      "Data Poisoning",
+      "Adversarial Attack",
+      "Model Stealing"
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "Adversarial Attack",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "Cryptography",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 318,
+    "sourceQuestionId": 69,
+    "question": "Which technology allows multiple isolated user-space instances to run on a single host, often managed by tools like Docker or Kubernetes?",
+    "questionZh": "",
+    "options": [
+      "Virtual Machines",
+      "Containers",
+      "Bare Metal",
+      "Serverless"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Containers",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Cloud Computing",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 319,
+    "sourceQuestionId": 70,
+    "question": "Which type of malware encrypts a user's files and demands payment in cryptocurrency to provide the decryption key?",
+    "questionZh": "",
+    "options": [
+      "Spyware",
+      "Adware",
+      "Ransomware",
+      "Rootkit"
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "Ransomware",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "Malware Threats",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 320,
+    "sourceQuestionId": 71,
+    "question": "What does a \"Digital Signature\" provide in terms of security?",
+    "questionZh": "",
+    "options": [
+      "Confidentiality and Availability",
+      "Integrity, Non-repudiation, and Authentication",
+      "Encryption and Privacy",
+      "Speed and Efficiency"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Integrity, Non-repudiation, and Authentication",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Cryptography",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 321,
+    "sourceQuestionId": 72,
+    "question": "What is the primary difference between an IDS (Intrusion Detection System) and an IPS (Intrusion Prevention System)?",
+    "questionZh": "",
+    "options": [
+      "IDS is hardware; IPS is software.",
+      "IDS monitors traffic; IPS encrypts traffic.",
+      "IDS alerts on threats; IPS actively blocks threats.",
+      "There is no difference."
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "IDS alerts on threats; IPS actively blocks threats.",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "General CEH",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 322,
+    "sourceQuestionId": 73,
+    "question": "A firewall that keeps track of the state of active connections and makes decisions based on the context of the traffic is called:",
+    "questionZh": "",
+    "options": [
+      "Packet Filter",
+      "Stateful Inspection Firewall",
+      "Circuit-Level Gateway",
+      "Proxy Firewall"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Stateful Inspection Firewall",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Network and Perimeter Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 323,
+    "sourceQuestionId": 74,
+    "question": "Which of the following is a \"one-way\" function used to ensure data integrity?",
+    "questionZh": "",
+    "options": [
+      "Symmetric Encryption",
+      "Asymmetric Encryption",
+      "Hashing",
+      "Encoding"
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "Hashing",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "Cryptography",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 324,
+    "sourceQuestionId": 75,
+    "question": "Which organization maintains the \"Top 10\" list of the most critical web application security risks?",
+    "questionZh": "",
+    "options": [
+      "SANS Institute",
+      "OWASP",
+      "NIST",
+      "IEEE"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "OWASP",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Web Application Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 325,
+    "sourceQuestionId": 76,
+    "question": "In the Metasploit Framework, which module is used to deliver a specific piece of code to a target system to gain access?",
+    "questionZh": "",
+    "options": [
+      "Auxiliary",
+      "Exploit",
+      "Post",
+      "NOP"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Exploit",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "General CEH",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 326,
+    "sourceQuestionId": 77,
+    "question": "You are using Wireshark to analyze traffic. Which filter would you use to see only traffic destined for or coming from IP address 10.0.0.5?",
+    "questionZh": "",
+    "options": [
+      "tcp.port == 80",
+      "ip.addr == 10.0.0.5",
+      "http.request",
+      "eth.src == 00:11:22"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "ip.addr == 10.0.0.5",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Web Application Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 327,
+    "sourceQuestionId": 78,
+    "question": "An attacker sends spoofed ARP messages onto a local area network to link their MAC address with the IP address of a legitimate server. This is called:",
+    "questionZh": "",
+    "options": [
+      "DNS Poisoning",
+      "ARP Poisoning (Spoofing)",
+      "DHCP Starvation",
+      "ICMP Redirect"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "ARP Poisoning (Spoofing)",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Network and Perimeter Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 328,
+    "sourceQuestionId": 79,
+    "question": "What is the primary purpose of DNSSEC?",
+    "questionZh": "",
+    "options": [
+      "To encrypt DNS queries for privacy.",
+      "To make DNS resolution faster.",
+      "To provide authentication and integrity to DNS data.",
+      "To block malicious websites automatically."
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "To provide authentication and integrity to DNS data.",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "Network and Perimeter Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 329,
+    "sourceQuestionId": 80,
+    "question": "Which of the following is an example of \"Something you are\" in Multi- factor Authentication (MFA)?",
+    "questionZh": "",
+    "options": [
+      "Password",
+      "Hardware Token",
+      "Fingerprint",
+      "SMS Code"
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "Fingerprint",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "General CEH",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 330,
+    "sourceQuestionId": 81,
+    "question": "An attacker uses a specialized tool to steal data (contacts, photos) from a victim's phone via an open Bluetooth connection. This is called:",
+    "questionZh": "",
+    "options": [
+      "Bluejacking",
+      "Bluesnarfing",
+      "Blueprinting",
+      "Blueborne"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Bluesnarfing",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Wireless Network Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 331,
+    "sourceQuestionId": 82,
+    "question": "What is the main function of an MDM (Mobile Device Management) solution?",
+    "questionZh": "",
+    "options": [
+      "To increase the battery life of mobile devices.",
+      "To enforce security policies and remotely wipe corporate mobile devices.",
+      "To provide free WiFi to employees.",
+      "To track the physical location of all employees 24/7."
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "To enforce security policies and remotely wipe corporate mobile devices.",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Wireless Network Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 332,
+    "sourceQuestionId": 83,
+    "question": "Which API architectural style uses standard HTTP methods (GET, POST, PUT, DELETE) and is often exploited through improper authorization?",
+    "questionZh": "",
+    "options": [
+      "SOAP",
+      "REST",
+      "GraphQL",
+      "XML-RPC"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "REST",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Web Application Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 333,
+    "sourceQuestionId": 84,
+    "question": "In which attack does a victim's browser perform an unwanted action on a different website where the victim is currently authenticated?",
+    "questionZh": "",
+    "options": [
+      "XSS",
+      "CSRF (Cross-Site Request Forgery)",
+      "Clickjacking",
+      "SQL Injection"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "CSRF (Cross-Site Request Forgery)",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Web Application Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 334,
+    "sourceQuestionId": 85,
+    "question": "A tester changes a URL from example.com/view?id=101 to example.com/view?id=102 and is able to see another user's private data. This is an example of:",
+    "questionZh": "",
+    "options": [
+      "Broken Authentication",
+      "IDOR (Insecure Direct Object Reference)",
+      "Security Misconfiguration",
+      "Cross-Site Scripting"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "IDOR (Insecure Direct Object Reference)",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "General CEH",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 335,
+    "sourceQuestionId": 86,
+    "question": "In a Security Operations Center (SOC), which role is typically responsible for the initial monitoring and triaging of security alerts?",
+    "questionZh": "",
+    "options": [
+      "Tier 1 Analyst",
+      "Tier 3 Analyst (Threat Hunter)",
+      "SOC Manager",
+      "Incident Response Commander"
+    ],
+    "optionsZh": [],
+    "correctIndex": 0,
+    "answerLetter": "A",
+    "answerText": "Tier 1 Analyst",
+    "sourceAnswerText": "A",
+    "answerStatus": "source-verified",
+    "topic": "General CEH",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 336,
+    "sourceQuestionId": 87,
+    "question": "What is the first phase of the Incident Response process?",
+    "questionZh": "",
+    "options": [
+      "Containment",
+      "Eradication",
+      "Preparation",
+      "Recovery"
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "Preparation",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "General CEH",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 337,
+    "sourceQuestionId": 88,
+    "question": "Which document outlines how a business will continue to operate during and after a significant disaster?",
+    "questionZh": "",
+    "options": [
+      "SLA",
+      "NDA",
+      "BCP (Business Continuity Plan)",
+      "AUP"
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "BCP (Business Continuity Plan)",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "General CEH",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 338,
+    "sourceQuestionId": 89,
+    "question": "In Linux, what does the command chmod 777 file.txt do?",
+    "questionZh": "",
+    "options": [
+      "Deletes the file.",
+      "Makes the file read-only.",
+      "Grants full read, write, and execute permissions to everyone.",
+      "Changes the owner of the file to \"777\"."
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "Grants full read, write, and execute permissions to everyone.",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "General CEH",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 339,
+    "sourceQuestionId": 90,
+    "question": "Which Windows Registry hive contains configuration information for the currently logged-in user?",
+    "questionZh": "",
+    "options": [
+      "HKEY_LOCAL_MACHINE (HKLM)",
+      "HKEY_CURRENT_USER (HKCU)",
+      "HKEY_CLASSES_ROOT (HKCR)",
+      "HKEY_USERS (HKU)"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "HKEY_CURRENT_USER (HKCU)",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "General CEH",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 340,
+    "sourceQuestionId": 91,
+    "question": "After gaining access to a system with a low-privilege account, an attacker exploits a kernel vulnerability to gain administrative rights. What is this process called?",
+    "questionZh": "",
+    "options": [
+      "Horizontal Privilege Escalation",
+      "Vertical Privilege Escalation",
+      "Lateral Movement",
+      "Maintaining Persistence"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Vertical Privilege Escalation",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "General CEH",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 341,
+    "sourceQuestionId": 92,
+    "question": "To hide their activities on a Windows system, an attacker clears the Security, System, and Application logs. Which tool is commonly used for this?",
+    "questionZh": "",
+    "options": [
+      "ipconfig /flushdns",
+      "taskkill",
+      "wevtutil or Event Viewer",
+      "netsh"
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "wevtutil or Event Viewer",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "Network and Perimeter Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 342,
+    "sourceQuestionId": 93,
+    "question": "In malware analysis, what is the term for running a suspicious file in a controlled, isolated environment to observe its behavior?",
+    "questionZh": "",
+    "options": [
+      "Static Analysis",
+      "Dynamic Analysis (Sandboxing)",
+      "Reverse Engineering",
+      "Code Auditing"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Dynamic Analysis (Sandboxing)",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Malware Threats",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 343,
+    "sourceQuestionId": 94,
+    "question": "Which type of Trojan allows an attacker to gain complete remote control over a victim's machine, often including webcam access and file manipulation?",
+    "questionZh": "",
+    "options": [
+      "Ransomware",
+      "RAT (Remote Access Trojan)",
+      "Rootkit",
+      "Botnet"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "RAT (Remote Access Trojan)",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Malware Threats",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 344,
+    "sourceQuestionId": 95,
+    "question": "An attacker uses \"Session Splicing\" to bypass an IDS. How does this technique work?",
+    "questionZh": "",
+    "options": [
+      "It encrypts the entire payload.",
+      "It splits the attack payload into multiple small packets to avoid signature matching.",
+      "It uses a proxy to hide the attacker's IP.",
+      "It floods the IDS with fake alerts."
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "It splits the attack payload into multiple small packets to avoid signature matching.",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Web Application Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 345,
+    "sourceQuestionId": 96,
+    "question": "To evade a firewall, an attacker wraps a non-permitted protocol (like SSH) inside a permitted protocol (like HTTPS). This is called:",
+    "questionZh": "",
+    "options": [
+      "Port Scanning",
+      "Tunneling",
+      "IP Spoofing",
+      "Banner Grabbing"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Tunneling",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Web Application Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 346,
+    "sourceQuestionId": 97,
+    "question": "What is the most effective way to prevent SQL injection in a modern web application?",
+    "questionZh": "",
+    "options": [
+      "Using a complex firewall.",
+      "Limiting the length of input fields.",
+      "Using Prepared Statements (Parameterized Queries).",
+      "Running the database as root."
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "Using Prepared Statements (Parameterized Queries).",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "Web Application Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 347,
+    "sourceQuestionId": 98,
+    "question": "In a cloud environment, which service model provides the highest level of control to the customer, including managing the OS and middleware?",
+    "questionZh": "",
+    "options": [
+      "IaaS (Infrastructure as a Service)",
+      "PaaS (Platform as a Service)",
+      "SaaS (Software as a Service)",
+      "SECaaS (Security as a Service)"
+    ],
+    "optionsZh": [],
+    "correctIndex": 0,
+    "answerLetter": "A",
+    "answerText": "IaaS (Infrastructure as a Service)",
+    "sourceAnswerText": "A",
+    "answerStatus": "source-verified",
+    "topic": "Cloud Computing",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 348,
+    "sourceQuestionId": 99,
+    "question": "An attacker targets the PLC (Programmable Logic Controller) of a water treatment plant. This is an attack on which type of system?",
+    "questionZh": "",
+    "options": [
+      "Cloud Computing",
+      "IoT",
+      "OT / ICS (Operational Technology / Industrial Control Systems)",
+      "Mobile Platforms"
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "OT / ICS (Operational Technology / Industrial Control Systems)",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "Cloud Computing",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 349,
+    "sourceQuestionId": 100,
+    "question": "Which of the following is an example of a \"Zero-Day\" vulnerability?",
+    "questionZh": "",
+    "options": [
+      "A vulnerability that has been patched for years.",
+      "A misconfiguration in a firewall.",
+      "A vulnerability that is unknown to the vendor and has no available patch.",
+      "A password that is too short."
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "A vulnerability that is unknown to the vendor and has no available patch.",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "Network and Perimeter Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 350,
+    "sourceQuestionId": 101,
+    "question": "What is the primary security goal of \"Zero Trust Architecture\"?",
+    "questionZh": "",
+    "options": [
+      "To trust everyone inside the corporate network.",
+      "To eliminate all firewalls.",
+      "To never trust, always verify, regardless of where the request originates.",
+      "To use only open-source software. Shutterstock"
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "To never trust, always verify, regardless of where the request originates.",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "Network and Perimeter Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 351,
+    "sourceQuestionId": 102,
+    "question": "In AI security, an attacker subtly modifies training data to introduce a \"backdoor\" into a Machine Learning model. This is called:",
+    "questionZh": "",
+    "options": [
+      "Evasion Attack",
+      "Data Poisoning",
+      "Model Inversion",
+      "Prompt Injection"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Data Poisoning",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "General CEH",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 352,
+    "sourceQuestionId": 103,
+    "question": "Which Bluetooth attack involves sending unsolicited messages to nearby devices but does not involve data theft?",
+    "questionZh": "",
+    "options": [
+      "Bluejacking",
+      "Bluesnarfing",
+      "Blueborne",
+      "Blueprinting"
+    ],
+    "optionsZh": [],
+    "correctIndex": 0,
+    "answerLetter": "A",
+    "answerText": "Bluejacking",
+    "sourceAnswerText": "A",
+    "answerStatus": "source-verified",
+    "topic": "Wireless Network Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 353,
+    "sourceQuestionId": 104,
+    "question": "What does the \"S\" in WPA3-SAE stand for, providing better protection against offline dictionary attacks?",
+    "questionZh": "",
+    "options": [
+      "Secure",
+      "Simultaneous (Simultaneous Authentication of Equals)",
+      "Static",
+      "Shared"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Simultaneous (Simultaneous Authentication of Equals)",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Wireless Network Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 354,
+    "sourceQuestionId": 105,
+    "question": "A security professional is calculating risk. If the Asset Value is $100,000 and the Exposure Factor is 0.5, what is the Single Loss Expectancy (SLE)?",
+    "questionZh": "",
+    "options": [
+      "$200,000",
+      "$50,000",
+      "$10,000",
+      "$100,000"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "$50,000",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "General CEH",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 355,
+    "sourceQuestionId": 106,
+    "question": "Which type of security policy defines the general security goals and principles of an entire organization?",
+    "questionZh": "",
+    "options": [
+      "Enterprise Information Security Policy (EISP)",
+      "Issue-Specific Security Policy (ISSP)",
+      "System-Specific Security Policy (SSSP)",
+      "Acceptable Use Policy (AUP)"
+    ],
+    "optionsZh": [],
+    "correctIndex": 0,
+    "answerLetter": "A",
+    "answerText": "Enterprise Information Security Policy (EISP)",
+    "sourceAnswerText": "A",
+    "answerStatus": "source-verified",
+    "topic": "General CEH",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 356,
+    "sourceQuestionId": 107,
+    "question": "Which law in the United States requires healthcare providers to protect patient data privacy and security?",
+    "questionZh": "",
+    "options": [
+      "SOX",
+      "PCI-DSS",
+      "HIPAA",
+      "GDPR"
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "HIPAA",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "General CEH",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 357,
+    "sourceQuestionId": 108,
+    "question": "During a pen test, you find an open Telnet port. You connect to it and the system displays \"Welcome to Ubuntu 22.04\". This is an example of:",
+    "questionZh": "",
+    "options": [
+      "Social Engineering",
+      "Banner Grabbing",
+      "Vulnerability Scanning",
+      "SQL Injection"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Banner Grabbing",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Web Application Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 358,
+    "sourceQuestionId": 109,
+    "question": "Which Nmap timing template (T0-T5) is the most aggressive and fastest, but also the most likely to be detected?",
+    "questionZh": "",
+    "options": [
+      "T0 (Paranoid)",
+      "T1 (Sneaky)",
+      "T3 (Normal)",
+      "T5 (Insane)"
+    ],
+    "optionsZh": [],
+    "correctIndex": 3,
+    "answerLetter": "D",
+    "answerText": "T5 (Insane)",
+    "sourceAnswerText": "D",
+    "answerStatus": "source-verified",
+    "topic": "Network and Perimeter Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 359,
+    "sourceQuestionId": 110,
+    "question": "What is the primary purpose of a \"Purge\" in the data destruction process?",
+    "questionZh": "",
+    "options": [
+      "To simply delete the file pointers.",
+      "To make data recovery impossible even with laboratory- grade tools.",
+      "To recycle the hardware.",
+      "To archive data for 10 years."
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "To make data recovery impossible even with laboratory- grade tools.",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "General CEH",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 360,
+    "sourceQuestionId": 111,
+    "question": "Which tool is often used for \"Google Dorking\" to find vulnerable web servers?",
+    "questionZh": "",
+    "options": [
+      "Nmap",
+      "Wireshark",
+      "Google Search Engine",
+      "Metasploit"
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "Google Search Engine",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "Network and Perimeter Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 361,
+    "sourceQuestionId": 112,
+    "question": "In the context of the \"Hacker Classes,\" which one describes an individual who hacks for a political or social cause?",
+    "questionZh": "",
+    "options": [
+      "Script Kiddie",
+      "Hacktivist",
+      "White Hat",
+      "State-Sponsored Hacker"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Hacktivist",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "General CEH",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 362,
+    "sourceQuestionId": 113,
+    "question": "Which of the following is a \"Physical\" security control?",
+    "questionZh": "",
+    "options": [
+      "Firewall",
+      "Antivirus",
+      "Security Guard",
+      "Encryption"
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "Security Guard",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "Cryptography",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 363,
+    "sourceQuestionId": 114,
+    "question": "What happens during the \"Containment\" phase of Incident Response?",
+    "questionZh": "",
+    "options": [
+      "The attacker is identified and arrested.",
+      "The affected systems are isolated to prevent the threat from spreading.",
+      "All backups are restored.",
+      "The vulnerability is patched."
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "The affected systems are isolated to prevent the threat from spreading.",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "General CEH",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 364,
+    "sourceQuestionId": 115,
+    "question": "An attacker uses a \"Side-Channel Attack\" to monitor the power consumption of a smart card to guess its PIN. What is this specifically called?",
+    "questionZh": "",
+    "options": [
+      "Timing Attack",
+      "Power Analysis Attack",
+      "Electromagnetic Attack",
+      "Fault Injection Attack"
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Power Analysis Attack",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "General CEH",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 365,
+    "sourceQuestionId": 116,
+    "question": "Which of the following is a \"Container\" security best practice?",
+    "questionZh": "",
+    "options": [
+      "Running containers as root.",
+      "Using minimal base images and scanning for vulnerabilities.",
+      "Storing passwords in clear text in the Dockerfile.",
+      "Disabling all logging."
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Using minimal base images and scanning for vulnerabilities.",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Cloud Computing",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 366,
+    "sourceQuestionId": 117,
+    "question": "What is the purpose of the nc -l -p 4444 command in Netcat?",
+    "questionZh": "",
+    "options": [
+      "To scan ports 1 to 4444.",
+      "To listen for an incoming connection on port 4444.",
+      "To connect to a remote server on port 4444.",
+      "To transfer a file."
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "To listen for an incoming connection on port 4444.",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "General CEH",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 367,
+    "sourceQuestionId": 118,
+    "question": "Which protocol is used by \"Traceroute\" to map the path of a packet?",
+    "questionZh": "",
+    "options": [
+      "TCP",
+      "UDP",
+      "ICMP",
+      "ARP"
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "ICMP",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "Network and Perimeter Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 368,
+    "sourceQuestionId": 119,
+    "question": "A \"Buffer Overflow\" attack that targets the function return address on the stack is called:",
+    "questionZh": "",
+    "options": [
+      "Stack-based Buffer Overflow",
+      "Heap-based Buffer Overflow",
+      "Integer Overflow",
+      "Format String Attack"
+    ],
+    "optionsZh": [],
+    "correctIndex": 0,
+    "answerLetter": "A",
+    "answerText": "Stack-based Buffer Overflow",
+    "sourceAnswerText": "A",
+    "answerStatus": "source-verified",
+    "topic": "General CEH",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 369,
+    "sourceQuestionId": 120,
+    "question": "Which of the following is a symptom of a \"Slowloris\" attack?",
+    "questionZh": "",
+    "options": [
+      "The database crashes due to malformed queries.",
+      "The web server runs out of available connections because many remain partially open.",
+      "The network bandwidth is completely saturated by UDP packets.",
+      "All files on the server are encrypted."
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "The web server runs out of available connections because many remain partially open.",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Network and Perimeter Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 370,
+    "sourceQuestionId": 121,
+    "question": "In a \"Public Key Infrastructure\" (PKI), who is responsible for issuing and signing digital certificates?",
+    "questionZh": "",
+    "options": [
+      "The User",
+      "The Browser",
+      "The Certificate Authority (CA)",
+      "The ISP"
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "The Certificate Authority (CA)",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "Cryptography",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 371,
+    "sourceQuestionId": 122,
+    "question": "What is \"Fuzzing\"?",
+    "questionZh": "",
+    "options": [
+      "A technique for social engineering.",
+      "Sending massive amounts of random data to a program to find crashes and vulnerabilities.",
+      "A type of wireless encryption.",
+      "The process of removing logs."
+    ],
+    "optionsZh": [],
+    "correctIndex": 1,
+    "answerLetter": "B",
+    "answerText": "Sending massive amounts of random data to a program to find crashes and vulnerabilities.",
+    "sourceAnswerText": "B",
+    "answerStatus": "source-verified",
+    "topic": "Wireless Network Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 372,
+    "sourceQuestionId": 123,
+    "question": "Which type of scan is the most \"silent\" because it sends no packets to the target but instead observes existing traffic?",
+    "questionZh": "",
+    "options": [
+      "SYN Scan",
+      "Connect Scan",
+      "Passive Discovery",
+      "UDP Scan"
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "Passive Discovery",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "Network and Perimeter Hacking",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 373,
+    "sourceQuestionId": 124,
+    "question": "What is the main ethical rule for a \"White Hat\" hacker?",
+    "questionZh": "",
+    "options": [
+      "Gain access by any means necessary.",
+      "Sell vulnerabilities on the dark web.",
+      "Always obtain written permission before testing.",
+      "Keep the found vulnerabilities secret from the owner."
+    ],
+    "optionsZh": [],
+    "correctIndex": 2,
+    "answerLetter": "C",
+    "answerText": "Always obtain written permission before testing.",
+    "sourceAnswerText": "C",
+    "answerStatus": "source-verified",
+    "topic": "General CEH",
+    "source": "ceh13-03.pdf"
+  },
+  {
+    "id": 374,
+    "sourceQuestionId": 125,
+    "question": "Which phase of the CEH methodology involves the final delivery of the findings and recommendations to the client?",
+    "questionZh": "",
+    "options": [
+      "Scanning",
+      "Gaining Access",
+      "Maintaining Access",
+      "Reporting"
+    ],
+    "optionsZh": [],
+    "correctIndex": 3,
+    "answerLetter": "D",
+    "answerText": "Reporting",
+    "sourceAnswerText": "D",
+    "answerStatus": "source-verified",
+    "topic": "General CEH",
+    "source": "ceh13-03.pdf"
+  }
+]

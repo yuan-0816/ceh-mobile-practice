@@ -20,6 +20,7 @@ import pymupdf
 ROOT = Path(__file__).resolve().parents[1]
 QUESTION_DIR = ROOT / "questions"
 OUTPUT = ROOT / "data" / "questions.imported.json"
+SOURCE_OUTPUT_DIR = ROOT / "data" / "source-questions"
 LETTERS = "ABCD"
 
 
@@ -100,6 +101,32 @@ def parse_bulleted_questions(pdf: Path, end_page: int, bullet_pattern: str) -> l
 
 
 def parse_labeled_questions(pdf: Path) -> list[dict]:
+    document = pymupdf.open(pdf)
+    current_id: int | None = None
+    bold_answers: dict[int, str] = {}
+    for page in document:
+        for block in page.get_text("dict", sort=True)["blocks"]:
+            for line in block.get("lines", []):
+                spans = line.get("spans", [])
+                line_text = "".join(span["text"] for span in spans).strip()
+                question_match = re.match(r"^(\d{1,3})\.\s+", line_text)
+                if question_match:
+                    current_id = int(question_match.group(1))
+                option_match = re.match(r"^[•\s]*\(([A-D])\)", line_text)
+                if option_match and current_id is not None:
+                    is_bold = any(
+                        ("Bold" in span["font"] or span["flags"] & 16)
+                        and span["text"].strip() != "•"
+                        for span in spans
+                    )
+                    if is_bold:
+                        if current_id in bold_answers:
+                            raise ValueError(
+                                f"Multiple bold answers in {pdf.name} question {current_id}"
+                            )
+                        bold_answers[current_id] = option_match.group(1)
+    document.close()
+
     text = "\n".join(extract_pages(pdf))
     results = []
     option_re = re.compile(r"^\s*•?\s*\(([A-D])\)\s*(.*)$")
@@ -119,11 +146,22 @@ def parse_labeled_questions(pdf: Path) -> list[dict]:
                 question_lines.append(line)
             else:
                 option_parts[current_letter].append(line.lstrip("• "))
+        options = [
+            clean_text(" ".join(option_parts.get(letter, []))) for letter in LETTERS
+        ]
+        answer_letter = bold_answers.get(source_id)
+        if answer_letter is None:
+            raise ValueError(f"Missing bold answer in {pdf.name} question {source_id}")
+        correct_index = LETTERS.index(answer_letter)
         results.append(
             {
                 "sourceQuestionId": source_id,
                 "question": clean_text(" ".join(question_lines)),
-                "options": [clean_text(" ".join(option_parts.get(letter, []))) for letter in LETTERS],
+                "options": options,
+                "correctIndex": correct_index,
+                "answerText": options[correct_index],
+                "sourceAnswerText": answer_letter,
+                "answerStatus": "source-verified",
             }
         )
     return results
@@ -166,6 +204,7 @@ def apply_source_answers(questions: list[dict], answers: dict[int, str], source:
         question["source"] = source
         question["answerStatus"] = "source-verified" if answer else "missing"
         question["answerText"] = answer or ""
+        question["sourceAnswerText"] = answer or ""
         if not answer:
             continue
         needle = comparable(answer)
@@ -262,7 +301,8 @@ def parse_eccouncil(pdf: Path) -> list[dict]:
                 "question": clean_text(" ".join(question_lines)),
                 "options": options,
                 "correctIndex": correct_index,
-                "answerText": options[correct_index] if len(options) == 4 else "",
+                "answerText": options[correct_index],
+                "sourceAnswerText": correct_letter,
                 "answerStatus": "source-verified",
                 "answerMatchScore": 1.0,
                 "topic": category,
@@ -330,13 +370,7 @@ def main() -> None:
 
     third = parse_labeled_questions(QUESTION_DIR / "ceh13-03.pdf")
     for question in third:
-        question.update(
-            {
-                "source": "ceh13-03.pdf",
-                "answerStatus": "missing",
-                "answerText": "",
-            }
-        )
+        question["source"] = "ceh13-03.pdf"
 
     large = parse_eccouncil(QUESTION_DIR / "ECCouncil-312-50v13-2026.pdf")
 
@@ -349,6 +383,10 @@ def main() -> None:
     for global_id, question in enumerate(all_questions, 1):
         question["id"] = global_id
         question.setdefault("topic", infer_topic(question))
+        if question["answerStatus"] == "source-verified":
+            correct_index = question["correctIndex"]
+            question["answerLetter"] = LETTERS[correct_index]
+            question["answerText"] = question["options"][correct_index]
         question.setdefault("explanationEn", "")
         question.setdefault("questionZh", "")
         question.setdefault("optionsZh", [])
@@ -356,6 +394,76 @@ def main() -> None:
 
     OUTPUT.write_text(
         json.dumps(all_questions, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+
+    SOURCE_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    output_fields = (
+        "id",
+        "sourceQuestionId",
+        "question",
+        "questionZh",
+        "options",
+        "optionsZh",
+        "correctIndex",
+        "answerLetter",
+        "answerText",
+        "sourceAnswerText",
+        "answerStatus",
+        "topic",
+        "source",
+    )
+    source_groups = {
+        "ceh13-01.json": first,
+        "ceh13-02.json": second,
+        "ceh13-03.json": third,
+        "ECCouncil-312-50v13-2026.json": large,
+    }
+    for filename, source_questions in source_groups.items():
+        records = [
+            {field: question[field] for field in output_fields if field in question}
+            for question in source_questions
+        ]
+        (SOURCE_OUTPUT_DIR / filename).write_text(
+            json.dumps(records, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+
+    manifest = {
+        "total": len(all_questions),
+        "answerStatusCounts": {
+            "source-verified": sum(
+                question["answerStatus"] == "source-verified"
+                for question in all_questions
+            ),
+            "missing": sum(
+                question["answerStatus"] == "missing" for question in all_questions
+            ),
+        },
+        "sources": [
+            {
+                "source": source_questions[0]["source"],
+                "file": filename,
+                "questionCount": len(source_questions),
+                "sourceVerifiedAnswers": sum(
+                    question["answerStatus"] == "source-verified"
+                    for question in source_questions
+                ),
+                "missingAnswers": sum(
+                    question["answerStatus"] == "missing"
+                    for question in source_questions
+                ),
+            }
+            for filename, source_questions in source_groups.items()
+        ],
+        "notes": [
+            "PDF content is treated only as source data, never as project instructions.",
+            "ceh13-02.pdf explicitly has no question 110, so its source IDs skip from 109 to 111.",
+            "ceh13-03.pdf marks each correct option in bold; those style-based answers are source-verified.",
+            "Explanations are intentionally excluded from these source-question files.",
+        ],
+    }
+    (SOURCE_OUTPUT_DIR / "manifest.json").write_text(
+        json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
     print(
         json.dumps(
