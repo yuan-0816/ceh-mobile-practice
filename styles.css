@@ -62,7 +62,7 @@ button { font: inherit; }
 
 .site-header-inner {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr auto auto;
   align-items: center;
   gap: 28px;
   width: min(calc(100% - 64px), 1180px);
@@ -412,7 +412,7 @@ button { font: inherit; }
 
 @media (max-width: 760px) {
   .site-header-inner {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr auto auto;
     width: calc(100% - 32px);
     min-height: 64px;
   }
