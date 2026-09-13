@@ -16,6 +16,15 @@ let questions = [];
 let sourceGroups = [];
 let currentIndex = 0;
 let answerVisible = false;
+let darkMode = localStorage.getItem('ceh-theme') === 'dark';
+
+function applyTheme() {
+  document.documentElement.dataset.theme = darkMode ? 'dark' : 'light';
+  document.querySelector('meta[name="theme-color"]')?.setAttribute(
+    'content',
+    darkMode ? '#101820' : '#edf0e9',
+  );
+}
 
 function escapeHtml(value = '') {
   return value.replace(/[&<>"']/g, character => ({
@@ -45,6 +54,9 @@ function renderQuestion() {
           <strong>Exam Reader</strong>
         </a>
         <div class="header-status"><span></span>Source verified</div>
+        <button type="button" class="theme-toggle" data-theme-toggle aria-label="切換深色模式" title="切換深色模式">
+          <span aria-hidden="true">☾</span>
+        </button>
       </div>
     </header>
 
@@ -55,6 +67,13 @@ function renderQuestion() {
           <strong>${String(currentIndex + 1).padStart(3, '0')}</strong>
           <small>of ${questions.length}</small>
         </div>
+        <form class="question-jump" data-question-jump>
+          <label for="desktop-question-number">跳至題號</label>
+          <div>
+            <input id="desktop-question-number" name="questionNumber" type="number" min="1" max="${questions.length}" value="${currentIndex + 1}" inputmode="numeric" />
+            <button type="submit" aria-label="跳至指定題號">→</button>
+          </div>
+        </form>
         <div class="progress-track" aria-label="題庫進度"><span style="width:${progress}%"></span></div>
         <dl class="source-details">
           <div><dt>TOPIC</dt><dd>${escapeHtml(question.topic || 'General CEH')}</dd></div>
@@ -73,6 +92,13 @@ function renderQuestion() {
           <span>Question ${currentIndex + 1} / ${questions.length}</span>
           <span>${escapeHtml(question.topic || 'General CEH')}</span>
         </div>
+        <form class="question-jump mobile-question-jump" data-question-jump>
+          <label for="mobile-question-number">跳至題號</label>
+          <div>
+            <input id="mobile-question-number" name="questionNumber" type="number" min="1" max="${questions.length}" value="${currentIndex + 1}" inputmode="numeric" />
+            <button type="submit" aria-label="跳至指定題號">→</button>
+          </div>
+        </form>
         <div class="mobile-source">
           <label for="mobile-source-select">題目來源</label>
           <select id="mobile-source-select" class="source-select" data-source-select>${sourceOptions}</select>
@@ -123,9 +149,36 @@ function renderQuestion() {
       renderQuestion();
     });
   });
+  document.querySelector('[data-theme-toggle]').addEventListener('click', () => {
+    darkMode = !darkMode;
+    localStorage.setItem('ceh-theme', darkMode ? 'dark' : 'light');
+    applyTheme();
+    renderQuestion();
+  });
+  document.querySelectorAll('[data-question-jump]').forEach(form => {
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      jumpToQuestion(form.elements.questionNumber.value);
+    });
+  });
   document.querySelectorAll('[data-source-select]').forEach(select => {
     select.addEventListener('change', () => moveToSource(select.value));
   });
+}
+
+function jumpToQuestion(value) {
+  const questionNumber = Number(value);
+  if (!Number.isInteger(questionNumber) || questionNumber < 1 || questionNumber > questions.length) return;
+  if (questionNumber - 1 === currentIndex) return;
+
+  currentIndex = questionNumber - 1;
+  answerVisible = false;
+  const url = new URL(window.location.href);
+  url.searchParams.set('q', questions[currentIndex].id);
+  history.replaceState(null, '', url);
+  renderQuestion();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  document.querySelector('#question-title').focus({ preventScroll: true });
 }
 
 function moveQuestion(direction) {
@@ -201,6 +254,8 @@ async function boot() {
     }
   }
 }
+
+applyTheme();
 
 document.addEventListener('keydown', event => {
   if (event.key === 'ArrowLeft') moveQuestion('previous');
