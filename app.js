@@ -23,6 +23,10 @@ function rememberQuestion(question) {
   localStorage.setItem(LAST_QUESTION_KEY, String(question.id));
 }
 
+function rememberCurrentQuestion() {
+  if (questions.length) rememberQuestion(questions[currentIndex]);
+}
+
 function applyTheme() {
   document.documentElement.dataset.theme = darkMode ? 'dark' : 'light';
   document.querySelector('meta[name="theme-color"]')?.setAttribute(
@@ -267,6 +271,11 @@ async function boot() {
 }
 
 applyTheme();
+
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'hidden') rememberCurrentQuestion();
+});
+window.addEventListener('pagehide', rememberCurrentQuestion);
 
 document.addEventListener('keydown', event => {
   if (event.key === 'ArrowLeft') moveQuestion('previous');
