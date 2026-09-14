@@ -1,4 +1,4 @@
-const CACHE='ceh-v27';
+const CACHE='ceh-v29';
 const ASSETS=[
   './',
   './index.html',

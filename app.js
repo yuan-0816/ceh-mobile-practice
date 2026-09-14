@@ -5,6 +5,7 @@ const DATA_URLS = [
   'data/source-questions/ECCouncil-312-50v13-2026.json',
 ];
 const LETTERS = ['A', 'B', 'C', 'D'];
+const LAST_QUESTION_KEY = 'ceh-last-question';
 const SOURCE_LABELS = {
   'ceh13-01.pdf': 'CEH 13-01',
   'ceh13-02.pdf': 'CEH 13-02',
@@ -17,6 +18,10 @@ let sourceGroups = [];
 let currentIndex = 0;
 let answerVisible = false;
 let darkMode = localStorage.getItem('ceh-theme') === 'dark';
+
+function rememberQuestion(question) {
+  localStorage.setItem(LAST_QUESTION_KEY, String(question.id));
+}
 
 function applyTheme() {
   document.documentElement.dataset.theme = darkMode ? 'dark' : 'light';
@@ -173,6 +178,7 @@ function jumpToQuestion(value) {
 
   currentIndex = questionNumber - 1;
   answerVisible = false;
+  rememberQuestion(questions[currentIndex]);
   const url = new URL(window.location.href);
   url.searchParams.set('q', questions[currentIndex].id);
   history.replaceState(null, '', url);
@@ -190,6 +196,7 @@ function moveQuestion(direction) {
   currentIndex = nextIndex;
   answerVisible = false;
   const question = questions[currentIndex];
+  rememberQuestion(question);
   const url = new URL(window.location.href);
   url.searchParams.set('q', question.id);
   history.replaceState(null, '', url);
@@ -203,6 +210,7 @@ function moveToSource(source) {
   if (nextIndex < 0) return;
   currentIndex = nextIndex;
   answerVisible = false;
+  rememberQuestion(questions[currentIndex]);
   const url = new URL(window.location.href);
   url.searchParams.set('q', questions[currentIndex].id);
   history.replaceState(null, '', url);
@@ -234,8 +242,11 @@ async function boot() {
     if (!questions.length) throw new Error('Empty question bank');
 
     const requestedQuestion = Number(new URLSearchParams(location.search).get('q'));
-    const requestedIndex = questions.findIndex(question => question.id === requestedQuestion);
+    const savedQuestion = Number(localStorage.getItem(LAST_QUESTION_KEY));
+    const questionToRestore = requestedQuestion || savedQuestion;
+    const requestedIndex = questions.findIndex(question => question.id === questionToRestore);
     currentIndex = requestedIndex >= 0 ? requestedIndex : 0;
+    rememberQuestion(questions[currentIndex]);
     renderQuestion();
   } catch (error) {
     console.error(error);
