@@ -132,7 +132,17 @@ button { font: inherit; }
   display: flex;
   justify-content: flex-end;
   gap: 6px;
-  margin-top: 24px;
+  position: fixed;
+  z-index: 25;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 10px max(32px, calc((100vw - 1180px) / 2));
+  border-top: 1px solid var(--line);
+  background: color-mix(in srgb, var(--surface) 97%, transparent);
+  box-shadow: 0 -8px 24px rgba(23, 33, 43, .1);
+  backdrop-filter: blur(14px);
 }
 
 .desktop-nav button,
@@ -538,7 +548,7 @@ button { font: inherit; }
   .question-page { animation: enter .22s ease-out both; }
 
   @keyframes enter {
-    from { opacity: 0; transform: translateY(4px); }
-    to { opacity: 1; transform: translateY(0); }
+    from { opacity: 0; }
+    to { opacity: 1; }
   }
 }
