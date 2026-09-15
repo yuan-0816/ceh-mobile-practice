@@ -127,8 +127,9 @@ function renderQuestion() {
 
         <nav class="desktop-nav" aria-label="題目導覽">
           <button type="button" data-direction="previous" ${currentIndex === 0 ? 'disabled' : ''}>← 上一題</button>
-          <button type="button" class="next answer-next" data-answer-next aria-expanded="${answerVisible}" ${answerVisible && currentIndex === questions.length - 1 ? 'disabled' : ''}>
-            ${answerVisible ? '下一題 →' : '顯示答案'}
+          <button type="button" class="next" data-direction="next" ${currentIndex === questions.length - 1 ? 'disabled' : ''}>下一題 →</button>
+          <button type="button" class="answer-toggle" data-answer-toggle aria-expanded="${answerVisible}">
+            ${answerVisible ? '隱藏答案' : '顯示答案'}
           </button>
         </nav>
 
@@ -138,8 +139,11 @@ function renderQuestion() {
         <button type="button" data-direction="previous" ${currentIndex === 0 ? 'disabled' : ''}>
           <span aria-hidden="true">←</span> 上一題
         </button>
-        <button type="button" class="next answer-next" data-answer-next aria-expanded="${answerVisible}" ${answerVisible && currentIndex === questions.length - 1 ? 'disabled' : ''}>
-          ${answerVisible ? '下一題' : '顯示答案'}
+        <button type="button" class="next" data-direction="next" ${currentIndex === questions.length - 1 ? 'disabled' : ''}>
+          下一題 <span aria-hidden="true">→</span>
+        </button>
+        <button type="button" class="answer-toggle" data-answer-toggle aria-expanded="${answerVisible}">
+          ${answerVisible ? '隱藏答案' : '顯示答案'}
         </button>
       </nav>
     </main>
@@ -148,14 +152,9 @@ function renderQuestion() {
   document.querySelectorAll('[data-direction]').forEach(button => {
     button.addEventListener('click', () => moveQuestion(button.dataset.direction));
   });
-  document.querySelectorAll('[data-answer-next]').forEach(button => {
+  document.querySelectorAll('[data-answer-toggle]').forEach(button => {
     button.addEventListener('click', () => {
-      if (answerVisible) {
-        moveQuestion('next');
-        return;
-      }
-
-      answerVisible = true;
+      answerVisible = !answerVisible;
       renderQuestion();
     });
   });
