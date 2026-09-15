@@ -278,8 +278,22 @@ document.addEventListener('visibilitychange', () => {
 window.addEventListener('pagehide', rememberCurrentQuestion);
 
 document.addEventListener('keydown', event => {
-  if (event.key === 'ArrowLeft') moveQuestion('previous');
-  if (event.key === 'ArrowRight') moveQuestion('next');
+  const target = event.target;
+  const isFormControl = target instanceof HTMLElement && (
+    ['INPUT', 'TEXTAREA', 'SELECT', 'BUTTON', 'A'].includes(target.tagName)
+    || target.isContentEditable
+  );
+  if (isFormControl || event.repeat) return;
+
+  if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+    event.preventDefault();
+    moveQuestion(event.key === 'ArrowLeft' ? 'previous' : 'next');
+  }
+  if (event.code === 'Space') {
+    event.preventDefault();
+    answerVisible = !answerVisible;
+    renderQuestion();
+  }
 });
 
 boot();
